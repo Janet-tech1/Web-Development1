@@ -1,0 +1,139 @@
+
+<!-- ## 🎯 Practice Exercise 4
+**Task:** Create a registration form with:
+- First and last name fields
+- Email and password
+- Age (number input)
+- Gender (radio buttons)
+- Interests (checkboxes)
+- Country dropdown
+- Submit button -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    
+</body>
+</html>
+<div style="background-color: #f9f9f9; padding: 20px; border-radius: 10px; max-width: 500px;">
+    <h3 style="color: hsl(128, 71%, 32%);">Registration Form</h3>
+    
+    <form>
+        <div style="margin-bottom: 15px;">
+            <label for="first name" style="display: block; margin-bottom: 5px; font-weight: bold; color: rgb(6, 122, 138);">First Name:</label>
+            <input type="text" id="first name" name="first name" 
+                   style="width: 90%; padding: 8px; border: 2px solid #ddd; border-radius: 5px;" 
+                   placeholder="Enter your first name">
+        </div>
+        
+        <div style="margin-bottom: 15px;">
+            <label for="last name" style="display: block; margin-bottom: 5px; font-weight: bold; color: rgb(6, 122, 138);">Last Name:</label>
+            <input type="text" id="last name" name="last name" 
+                   style="width: 90%; padding: 8px; border: 2px solid #ddd; border-radius: 5px;" 
+                   placeholder="Enter your last name">
+        </div>
+       
+        <div style="margin-bottom: 15px;">
+            <label for="email" style="display: block; margin-bottom: 5px; font-weight: bold; color: rgb(6, 122, 138);">Email:</label>
+            <input type="email" id="email" name="email" 
+                   style="width: 90%; padding: 8px; border: 2px solid #ddd; border-radius: 5px;" 
+                   placeholder="your.email@example.com">
+        </div>
+
+        <div style="margin-bottom: 15px;">
+            <label for="password" style="display: block; margin-bottom: 5px; font-weight: bold; color: rgb(6, 122, 138);">Password: (must include letter, symbol and number.e.g. Bola@20)</label>
+            <input type="password" id="password" name="password" 
+                   style="width: 90%; padding: 8px; border: 2px solid #ddd; border-radius: 5px;" 
+                    placeholder="Enter your password">
+        </div>
+
+       <tr>
+                <td><label for="age" style="display: block; margin-bottom: 5px; font-weight: bold; color: rgb(6, 122, 138);">Age: </label>
+                <td><input type="age" id="age-input" min="1" max="150" placeholder="Enter your age" 
+                           style="padding: 8px; border: 1px solid #ddd; border-radius: 4px; width: 100%;"></td>
+            </tr>
+        </div>
+
+        </fieldset>
+        
+        <fieldset style="border: 2px solid #27ae60; border-radius: 8px; padding: 15px; margin-bottom: 20px; width: 500px">
+            <legend style="font-weight: bold; color: rgb(6, 122, 138);">Gender (Select one):</legend>
+            
+            <div>
+                <p><label><input type="radio" name="experience" value="beginner"> Female</label></p>
+                <p><label><input type="radio" name="experience" value="intermediate"> Male</label></p>
+            </div>
+        </fieldset> 
+        
+         <fieldset style="border: 2px solid #27ae60; border-radius: 1px; padding: 15px; margin-bottom: 20px; width: 500px">
+            <legend style="font-weight: bold; color: rgb(6, 122, 138);">Interests:</legend>
+            
+            <div>
+                <p><label><input type="checkbox" name="languages" value="javascript"> javascript</label></p>
+                <p><label><input type="checkbox" name="languages" value="python"> python</label></p>
+                <p><label><input type="checkbox" name="languages" value="java"> javascript</label></p>
+                <p><label><input type="checkbox" name="languages" value="csharp"> c++</label></p>
+                <p><label><input type="checkbox" name="languages" value="php"> php</label></p>
+                <p><label><input type="checkbox" name="languages" value="javascript"> R</label></p>
+            </div>
+        </fieldset> 
+
+          <div style="margin-bottom: 15px; width: 500px">
+            <label for="country" style="display: block; margin-bottom: 5px; font-weight: bold; ; color: rgb(6, 122, 138);">Country: </label>
+            <select id="country" name="country" style="width: 100%; padding: 8px; border: 2px solid #ddd; border-radius: 5px;">
+                <option value="">Select your country</option>
+                <option value="us">United States</option>
+                <option value="uk">United Kingdom</option>
+                <option value="ca">Canada</option>
+                <option value="ng">Nigeria</option>
+                <option value="gh">Ghana</option>
+                <option value="ke">Kenya</option>
+                <option value="ch">China</option>
+                <option value="uk">Russia</option>
+                <option value="it">Italy</option>
+                <option value="ja">Japan</option>
+                <option value="gh">Germany</option>
+                <option value="ke">Spain</option>
+                <option value="ca">Mexico</option>
+                <option value="ng">Poland</option>
+                <option value="gh">Brazil</option>
+                <option value="ke">France</option>
+            </select>
+        </div>
+
+    <button type="submit"
+                style="background-color: #1dc225; color: white; padding: 12px 20px; border-radius: 5px; cursor: pointer; font-size: 16px;">
+            Submit
+        </button>
+    </form>
+</div>
+        
+
+       
+<!-- INPUT TYPES: HTML5 provides many input types for different data collection needs.-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

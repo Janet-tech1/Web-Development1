@@ -1,0 +1,86 @@
+<!-- **Task:** Create a styled "About Me" card using CSS selectors and typography properties.
+
+**Requirements:**
+- Use different heading levels with custom fonts
+- Apply colors using different CSS color methods
+- Use classes for reusable styles
+- Include proper spacing with padding and margin
+- Make it visually appealing with borders and backgrounds -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        card-body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            max-width: 600px;
+            text-align: center;
+            margin: 100px;
+            margin-left: 250px;
+            margin-right: 250px;
+            color: rgb(110, 27, 9);
+            padding: 15px;
+            font-family: cursive;
+            border: 10px solid rgb(194, 127, 111);
+            border-radius: 10px;
+            background-color: rgb(239, 227, 215);
+        }
+
+        .card-heading {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 24px;
+            color: rgb(139, 60, 5);
+            margin-bottom: 15px;
+            font-style: oblique;
+        }
+
+        .card-body {
+            font-size: 18px;
+            font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+            color: rgb(18, 8, 8);
+            margin-bottom: 15px;
+            font-style: inherit;
+        }
+
+        .highlight {
+            color: rgb(254, 7, 7);
+            font-style: italic;
+        }
+
+        .highlight2 {
+            color: rgb(172, 4, 4);
+            font-style: italic;
+        }
+
+        .highlight3 {
+            color: transparent;
+            font-style: italic;
+            color: rgb(234, 58, 27);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="card">
+        <h1><u>About Me</u></h1>
+        <div class="card-heading">
+            <h2>Web Developer and Designer</h2>
+            <div class="card-body">
+                <p>Hi! I'm <span class="highlight">Janet Bamgbose</span>, a <span class="highlight3">passionate web developer and designer</span> with a love for creating innovative solutions.</p>
+                <p>With <span class="highlight2">6 months of experience</span>, I've honed my skills in <span class="highlight2"> front-end development</span>.</p>
+            </div>
+        </div>
+    </div>            
+</body>
+
+</html>

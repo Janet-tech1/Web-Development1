@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .box {
+            background-color: black;
+            padding: 5px;
+            padding-left: 50px;
+            padding-right: 0;
+
+        }
+
+        .body {
+            background-color: black;
+            color: white;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .hero {
+            display: inline-block;
+            margin-right: 20px;
+            list-style: none;
+            text-align: right;
+            font-size: 20px;
+            align-items: right;
+            padding-left: 1300px;
+            padding-right: 30px;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        .content1 {
+            background-color: black;
+            text-align: center;
+            font-size: 35px;
+            padding: 50px;
+            margin: 50px;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .highlight1 {
+            color: green;
+        }
+
+        .paragraph1 {
+            font-size: 16px;
+            color: gray;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .OrderView button {
+            padding: 5px 20px;
+            border: none;
+            border-radius: 10px;
+             height: 40px;
+            background-color: rgb(26, 255, 0);
+        }
+
+        #View {
+            background-color: grey;
+            font-weight: 600;
+            margin: 5px 5px;
+            border-radius: 10px;
+            height: 40px;
+        }
+
+        .Order_View {
+            display: flex;
+            gap: 25px;
+
+        }
+         .OrderView :hover {
+            background-color: white;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            align-items: center;
+           padding-bottom: 200px;
+            background-color: rgb(6, 6, 43);
+        }
+
+        .flavor {
+            background-color: rgb(6, 6, 43);
+            color: white;
+            font-size: 20px;
+            margin-left: 15px;
+            margin-right: 10px;
+            margin: auto;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font: 50;
+            padding: 60px 100px;
+            margin: 0px;
+        }
+
+        .image {
+            background-image: url(images/burger3.jpg);
+            height: 300px;
+            width: 150px;
+            padding: 50px 250px;
+            margin: 90px 200px;
+            border-radius: 20px;
+            justify-content: space-between;
+        }
+
+        .menu_box {
+            background-color: grey;
+            color: white;
+            height: 180px;
+            width: 10px;
+            padding-top: 0;
+            margin-top: 0px;
+            margin: 40px 30px;
+            padding: 0px 150px;
+            /* border-radius: 20px; */
+        }
+
+        .menu_container {
+            display: flex;
+            justify-content: center;
+            background-color: rgb(6, 6, 43);
+        }
+
+        .menu {
+            text-align: center;
+            color: white;
+            font: 50;
+            font-size: large;
+        }
+
+
+        .card-container {
+            display: flex;
+            gap: 10px;
+            background-color: rgb(6, 6, 43);
+            padding: 100px 100px;
+            padding-top: 3%;
+        }
+
+        .card {
+            width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            background-color: #234;
+            color: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0, 3);
+        }
+
+        .card img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            display: block;
+
+        }
+
+        .card-content {
+            padding: 30px;
+            height: 100px;
+        }
+
+        .card h2 {
+            margin: 0 0 8px;
+            font-size: 18px;
+        }
+
+        .card p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .passion {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            background-color: rgb(1, 19, 1);
+            color: white;
+            font-size: 25px;
+            padding-top: 10%;
+        }
+
+        .passion-content {
+            color: white;
+            text-align: center;
+            padding: 2%;
+            font-style: normal;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+
+        .passion h2 {
+            margin: 0 0 8px;
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+
+        .passion p {
+            margin: 0;
+            font-size: 19px;
+            color: #d0d0d0;
+            text-align: justify;
+            margin-bottom: 5px;
+            padding: 0;
+        }
+
+        .passion-cont p {
+            font-size: 16px;
+            text-align: center;
+            margin-bottom: 5px;
+            color: white;
+            justify-content: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .menu-explore {
+            background-color: rgb(1, 19, 1);
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .explore {
+            border-radius: 55px;
+            background-color: green;
+        }
+
+        .card-container2 {
+            display: flex;
+            gap: 20px;
+            text-align: center;
+            background-color: rgb(1, 19, 1);
+            padding: 100px 100px;
+            padding-top: 3%;
+        }
+
+        .card2 {
+            width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            background-color: rgb(34, 68, 47);
+            color: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0, 3);
+        }
+
+        .card2 img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            display: block;
+
+        }
+
+        .card2-content {
+            padding: 30px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .card2 h2 {
+            margin: 0 0 8px;
+            font-size: 18px;
+        }
+
+        .card2 p {
+            margin: 0;
+            font-size: 14px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+            gap: 40px;
+            align-items: flex-start;
+            background-color: rgb(1, 19, 1);
+        }
+
+        .contact-info {
+            flex: 1;
+            padding-right: 40px;
+            color: white;
+            font-size: 20px;
+        }
+
+        .contact h2 {
+            background-color: rgb(1, 19, 1);
+            color: white;
+            font-size: 32px;
+            margin: 15px;
+        }
+
+        .contact p {
+            font-size: 20px;
+            /* line-height: 5.0; */
+            margin-bottom: 20px;
+        }
+
+        .contact-form {
+            flex: 1;
+            background-color: rgb(1, 19, 1);
+            padding: 20px;
+            color: white;
+            border-radius: 50px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            border-radius: 20px;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            background-color: rgb(34, 68, 47);
+            border-radius: 20px;
+            outline: none;
+        }
+
+        .contact-form button {
+            width: 105%;
+            padding: 15px;
+            background-color: rgb(6, 187, 75);
+            color: black;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .contact-form :hover {
+            background-color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="box">
+        <div class="body">
+            <h3><i class="fa-solid fa-burger"></i> Foddie</h3>
+
+            <div class="hero">
+                <!-- <ul style="list-style: none; margin: 0; padding: 0;"> -->
+                <li style="display: inline-block; margin-right: 20px;">
+                <a href="#home" style="color: white; text-decoration: none; font-weight: bold;">Home</a>
+                </li>
+                <li style="display: inline-block; margin-right: 20px;">
+                <a href="#menu" style="color: white; text-decoration: none;">Menu</a>
+                </li>
+                <li style="display: inline-block; margin-right: 20px;">
+                <a href="#about" style="color: white; text-decoration: none;">About</a>
+                </li>
+                <li style="display: inline-block; margin-right: 20px;">
+                <a href="#contact" style="color: white; text-decoration: none;">Contact</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- <div class="box"> -->
+        <section id="home" style="margin-bottom: 30px; margin-top: 15px;">
+            <div class="content1">
+                <h1> Your Favorite Food,</h1>
+                <h1>Delivered <span class="highlight1">Hot & Fresh.</span></h1>
+                <div class="paragraph1">
+                    <p>Experience the best of local and international cusine, prepared with</p>
+                    <p>passion and delivered to your doorstep.</p>
+                </div>
+
+                <div class="OrderView">
+                    <button>Order Now</button>
+                    <button id="View">View Menu</button>
+                </div>
+
+            </div>
+</div>
+
+    <div class="container">
+        <div class="flavor">
+            <h1>Savour the Flavor</h1>
+            <h1>of our <span class="highlight1">Signature</span></h1>
+            <h1><span class="highlight1">Burger</span></h1>
+            <p>Indulge in our mouth watering burger, crafted with</p>
+            <p> premium ingredients and bursting with flavor. Experience</p>
+            <p> the perfect blend of juicy patty, fresh toppings, and a</p>
+            <p>toasted bun.</p>
+            <div class="OrderView">
+                <button>Order Now <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+        <div class="image">
+        </div>
+    </div>
+    <div class="menu_container">
+        <div class="menu">
+            <section id="menu" style="margin-bottom: 30px; margin-top: 15px;">
+            <h1>Our Delicious Menu</h1>
+            <p>Crafted with passion, from our kitchen to your table.</p>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <img src="images/pizza.jpg" alt="Margherita Pizza">
+            <div class="card-content">
+                <h2>Margherita Pizza</h2>
+                <p>A classic pizza with fresh mozzarella, San Marzano tomatoes, and basil.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/spag.jpg" alt="Spaghetti Carbonara">
+            <div class="card-content">
+                <h2>Spaghetti Carbonara</h2>
+                <p>Authentic Italian pasta with eggs, cheese, pancetta, and pepper.</p>
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="images/salad.jpg" alt="Caesar Salad">
+            <div class="card-content">
+                <h2>Caesar Salad</h2>
+                <p>Crisp romaine lettuce with Caesar dressing, croutons, and Parmesan cheese</p>
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+    <div class="passion">
+        <div class="passion-content">
+            <section id="about" style="margin-bottom: 30px; margin-top: 15px;">
+            <h1>About Our Passion For Food</h1>
+            <h2>From Our Kitchen to Your Table</h2>
+            <p>At our core, we are a team of passionate food enthusiasts dedicated to crafting
+                exceptional culinary</p>
+            <p>experiences. Our journey began with a simple desire: to share our love for delicious,
+                high-quality food
+                with the</p>
+            <p>world. We believe that food is more than just sustenance; it's a source of joy,
+                connection, and cultural
+            </p>
+            <p>experience.</p>
+            <div class="passion-content"></div>
+            <p>With this philosophy in mind, we meticulously source the finest ingredients, collaborate
+                with talented
+                chefs,</p>
+            <p>and employ innovative techniques to create dishes that tantalize the taste buds and
+                nourish the soul.</p>
+            <div class="passion-content"></div>
+            <p>Our commitment to excellence extends beyond the kitchen, as we strive to provide
+                exceptional customer</p>
+            <p>service and foster a welcoming community around our shared love for food. Join us on this
+                flavorful
+                adventure</p>
+            <p>as we explore the endless possibilities of gastronomy together.</p>
+        </div>
+
+    </div>
+    <div class="menu-explore">
+        <div class="OrderView">
+                <button>Explore Our Menu</button>
+            </div>
+        </div>
+    </div>
+    <div class="passion">
+        <div class="passion-cont">
+            <h1>What our customers say</h1>
+            <p>Hear from real people who love our product.</p>
+        </div>
+    </div>
+    <div class="card-container2">
+        <div class="card2">
+            <img class="card_img" src="images/customer.jpg" alt="">
+            <div class="card2-content">
+                <h2>"I've been using this product for a few weeks now, and I'm amazed at the results. My
+                    energy levels are up, and I feel fantastic!"</h2>
+                <p>Basit Aderogba</p>
+                <p>Happy Customer</p>
+            </div>
+        </div>
+        <div class="card2">
+            <img src="images/customer5.jpg" alt="">
+            <div class="card2-content">
+                <h2>"This product has completely changed my approah to healthy eating. It's so
+                    convenient and delicious, I look forward to every meal."</h2>
+                <p>David Chen</p>
+                <p>Loyal User</p>
+            </div>
+
+        </div>
+        <div class="card2">
+            <img src="images/customer9.jpg" alt="">
+            <div class="card2-content">
+                <h2>"I was skeptical at first, but this product exceeded my expectations. It's helped me
+                    stay on track with my fitness goals without sacrificing taste."</h2>
+                <p>Emilly Rodriguez</p>
+                <p>Fitness Enthusiast</p>
+            </div>
+        </div>
+
+    </div>
+    <section class="contact-container">
+        <div class="contact-info">
+            <section id="contact" style="margin-bottom: 30px; margin-top: 15px;">
+            <h1>Contact Us</h1>
+            <p>Have questions of feedback? We'd love to hear from you. Reach out to us using the contact
+                information below, or fill out the form, and we'll get back to you as soon as possible.
+            </p>
+            <div><i class="fa-solid fa-envelope"></i> contact@example.com</div>
+            <div><i class="fa-solid fa-phone"></i> +1 (234) 567-890</div>
+            <div><i class="fa-solid fa-location-dot"></i>123 Green St, Foodville, FV 45678</div>
+        </div>
+
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="8" placeholder="Your Message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    </div>
+
+
+
+    </div>
+</body>
+
+</body>
+
+</div>
+</div>
+
+
+</html

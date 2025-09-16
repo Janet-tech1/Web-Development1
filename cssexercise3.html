@@ -1,0 +1,63 @@
+<!-- **Challenge:** "My Favorite Quote".
+**Objective:** Use classes to style text.  
+
+**Instructions:**
+- Create a `<div>` with a class of `"quote-box"`.  
+- Inside, add a `<p>` with a quote and another `<p>` for the author.  
+- Style the quote to be italic, larger, and center-aligned.  
+- Style the author’s name to be smaller and right-aligned.  
+- Give the whole box a light background color. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Quote</title>
+  <style>
+    .box {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+        background-color: rgb(149, 244, 244);
+    }
+
+    
+    .quote-box {
+        font-style: italic;
+        font-size: larger;
+        text-align: center;
+        align-items: center;
+        background-color: rgb(44, 154, 44);
+        border-color: rgb(19, 119, 99);
+        margin: 200px 200px;
+        padding: 1px;
+        border: 1px;
+        border-radius: 10px;
+        box-shadow: darkblue;
+        width: 300;
+    }
+
+    .author {
+        font-size: smaller;
+        text-align: right;
+        
+    }
+
+  </style>
+    
+</head>
+<body class="box">
+    <div class="quote-box">
+        <p>"You're never too old to set another goal or to dream a new dream."</p>
+        
+        <div class="author">
+            <p>- C.S. Lewis</p>
+        </div>
+    </div>
+    
+</body>
+</html>

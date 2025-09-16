@@ -1,0 +1,422 @@
+<!-- **Create a professional contact page that includes:**
+**Requirements:**
+- Contact form with all input types we learned
+- Company information table
+- Image gallery
+- Social media links
+- Contact details (email, phone)
+- Professional styling with inline CSS -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Adorned by Bommiee Page</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<div style="padding: 32px">
+    <div
+        style="background-color: #42d3e6; width: 100%;padding: 20px; max-width: 1000px; margin-right: auto; margin-left: auto;">
+        <h1
+            style="color: hsl(250, 71%, 32%); font-family: Verdana, Geneva, Tahoma, sans-serif; font-style: oblique; text-align: center;">
+            Adorned by Bommiee</h1>
+
+        <h3 style="color: hsl(250, 71%, 32%);">Apprentice Registration Form</h3>
+
+        <form>
+            <div style="margin-bottom: 15px;">
+                <label for="first name"
+                    style="display: block; margin-bottom: 5px; font-weight: bold; color: rgb(6, 5, 30);">First
+                    Name:</label>
+                <input type="text" id="first name" name="first name"
+                    style="width: 90%; padding: 8px; border: 2px solid #ddd; border-radius: 5px;"
+                    placeholder="Enter your first name">
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="last name"
+                    style="display: block; margin-bottom: 5px; font-weight: bold; color: rgb(6, 5, 30);">Last
+                    Name:</label>
+                <input type="text" id="last name" name="last name"
+                    style="width: 90%; padding: 8px; border: 2px solid #ddd; border-radius: 5px;"
+                    placeholder="Enter your last name">
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="email"
+                    style="display: block; margin-bottom: 5px; font-weight: bold; color: rgb(6, 5, 30);">Email:</label>
+                <input type="email" id="email" name="email"
+                    style="width: 90%; padding: 8px; border: 2px solid #ddd; border-radius: 5px;"
+                    placeholder="your.email@example.com">
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="phone number"
+                    style="display: block; margin-bottom: 5px; font-weight: bold; color: rgb(6, 5, 30);">Phone
+                    number:</label>
+                <input type="text" id="phone number" name="phone number"
+                    style="width: 90%; padding: 8px; border: 2px solid #ddd; border-radius: 5px;"
+                    placeholder="Enter your phone number">
+            </div>
+
+            <tr>
+                <td><label for="age"
+                        style="display: block; margin-bottom: 5px; font-weight: bold; color: rgb(6, 5, 30);">Age:
+                    </label>
+                <td><input type="age" id="age-input" min="1" max="150" placeholder="Enter your age"
+                        style="padding: 8px; border: 1px solid #ddd; border-radius: 4px; width: 90%;"></td>
+            </tr>
+
+            <tr>
+                <td><label for="years of experience"
+                        style="display: block; margin-bottom: 5px; margin-top: 15px; font-weight: bold; color: rgb(6, 5, 30);">Years
+                        of Experience: </label>
+                <td><input type="age" id="years of experience" min="0" max="150" placeholder="Enter years of experience"
+                        style="padding: 8px; border: 1px solid #ddd; border-radius: 4px; width: 90%;"></td>
+            </tr>
+
+            <div style="margin-bottom: 15px; margin-top: 15px;">
+                <label for="home address"
+                    style="display: block; margin-bottom: 5px; font-weight: bold; color: rgb(6, 5, 30);">Home
+                    Address:</label>
+                <input type="text" id="home address" name="home address"
+                    style="width: 90%; padding: 8px; border: 2px solid #ddd; border-radius: 5px;"
+                    placeholder="Enter your home address">
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="guardians name"
+                    style="display: block; margin-bottom: 5px; font-weight: bold; color: rgb(6, 5, 30);">Guardian's
+                    Name:</label>
+                <input type="text" id="guardians name" name="guardians name"
+                    style="width: 90%; padding: 8px; border: 2px solid #ddd; border-radius: 5px;"
+                    placeholder="Enter guardian's name">
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="guardian phone number"
+                    style="display: block; margin-bottom: 5px; font-weight: bold; color: rgb(6, 5, 30);">Guardian's
+                    Phone Number:</label>
+                <input type="text" id="guardian phone number" name="guardian phone number"
+                    style="width: 90%; padding: 8px; border: 2px solid #ddd; border-radius: 5px;"
+                    placeholder="Enter your guardian's phone number">
+            </div>
+
+            </fieldset>
+            <legend style="font-weight: bold; color: rgb(6, 5, 30);">Gender (Select one):</legend>
+
+            <fieldset style="border: 2px solid #080916; border-radius: 8px; padding: 5px; margin-bottom: 20px;">
+                <div>
+                    <p><label><input type="radio" name="experience" value="beginner"> Female</label></p>
+                    <p><label><input type="radio" name="experience" value="intermediate"> Male</label></p>
+                </div>
+            </fieldset>
+
+            <fieldset style="border: 2px solid #080916; border-radius: 8px; padding: 5px; margin-bottom: 20px;">
+                <legend style="font-weight: bold; color: rgb(6, 5, 30);">Aspect (Select one):</legend>
+
+                <div>
+                    <p><label><input type="radio" name="experience" value="beginner"> Female wears</label></p>
+                    <p><label><input type="radio" name="experience" value="intermediate"> Male wears</label></p>
+                    <p><label><input type="radio" name="experience" value="intermediate"> Both</label></p>
+                </div>
+            </fieldset>
+
+            <fieldset style="border: 2px solid #080916; border-radius: 1px; padding: 5px; margin-bottom: 20px;">
+                <legend style="font-weight: bold; color: rgb(6, 5, 30);">Interests:</legend>
+
+                <div>
+                    <p><label><input type="checkbox" name="interest" value="ready to wear"> Ready to wear</label></p>
+                    <p><label><input type="checkbox" name="interest" value="haute clothing"> Haute clothing</label></p>
+                    <p><label><input type="checkbox" name="interest" value="street wear"> Street wear</label></p>
+                    <p><label><input type="checkbox" name="interest" value="minimalistic fashion"> Minimalistic
+                            fashion</label></p>
+                    <p><label><input type="checkbox" name="interest" value="cultural fashion"> Cultural fashion</label>
+                    </p>
+                    <p><label><input type="checkbox" name="interest" value="bridal fashion"> Bridal fashion</label></p>
+                    <p><label><input type="checkbox" name="interest" value="all"> All of the above</label></p>
+                </div>
+            </fieldset>
+
+            <div style="margin-bottom: 15px;">
+                <label for="country"
+                    style="display: block; margin-bottom: 5px; font-weight: bold; ; color: rgb(6, 5, 30);">Country:
+                </label>
+                <select id="country" name="country"
+                    style="width: 100%; padding: 5px; border: 2px solid #ddd; border-radius: 5px;">
+                    <option value="">Select your country</option>
+                    <option value="us">United States</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="ca">Canada</option>
+                    <option value="ng">Nigeria</option>
+                    <option value="gh">Ghana</option>
+                    <option value="ke">Kenya</option>
+                    <option value="ch">China</option>
+                    <option value="uk">Russia</option>
+                    <option value="it">Italy</option>
+                    <option value="ja">Japan</option>
+                    <option value="gh">Germany</option>
+                    <option value="ke">Spain</option>
+                    <option value="ca">Mexico</option>
+                    <option value="ng">Poland</option>
+                    <option value="gh">Brazil</option>
+                    <option value="ke">France</option>
+                </select>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="state of origin"
+                    style="display: block; margin-bottom: 5px; font-weight: bold; ; color: rgb(6, 5, 30);">State of
+                    origin: </label>
+                <select id="state of origin" name="state of origin"
+                    style="width: 100%; padding: 8px; border: 2px solid #ddd; border-radius: 5px;">
+                    <option value="">Select your state of origin</option>
+                    <option value="us">Ogun State</option>
+                    <option value="uk">Lagos State</option>
+                    <option value="ca">Osun State</option>
+                    <option value="ng">Ondo State</option>
+                    <option value="gh">Bayelsa State</option>
+                    <option value="ke">Akwa-ibom State</option>
+                    <option value="ch">Delta state</option>
+                    <option value="uk">Benue State</option>
+                    <option value="it">Kogi State</option>
+                    <option value="ja">Kano State</option>
+                    <option value="gh">Kaduna State</option>
+                    <option value="ke">Ekiti State</option>
+                    <option value="ca">Adamawa State</option>
+                    <option value="ng">Anambra State</option>
+                    <option value="gh">Bauchi State</option>
+                    <option value="ke">Borno State</option>
+                    <option value="ke">Cross River State</option>
+                    <option value="us">Ebonyi State</option>
+                    <option value="uk">Oyo State</option>
+                    <option value="ca">Edo State</option>
+                    <option value="ng">Enugu State</option>
+                    <option value="gh">Gombe State</option>
+                    <option value="ke">Imo State</option>
+                    <option value="ch">Jigawa state</option>
+                    <option value="uk">Kastina State</option>
+                    <option value="it">Kwara State</option>
+                    <option value="ja">Niger State</option>
+                    <option value="gh">Plateau State</option>
+                    <option value="ke">Rivers State</option>
+                    <option value="ca">Sokoto State</option>
+                    <option value="ng">Taraba State</option>
+                    <option value="gh">Yobe State</option>
+                    <option value="ke">Zamfara State</option>
+                </select>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="message"
+                    style="display: block; margin-bottom: 5px; font-weight: bold; color: rgb(6, 5, 30);">Why do you want
+                    to work with us?:</label>
+                <textarea id="message" name="message" rows="5"
+                    style="width: 90%; padding: 8px; border: 2px solid #ddd; border-radius: 5px;"
+                    placeholder="Write your message here..."></textarea>
+            </div>
+
+            <button type="submit"
+                style="background-color: rgb(6, 5, 30); color: white; padding: 12px 20px; border-radius: 5px; cursor: pointer; font-size: 16px;">
+                Submit
+            </button>
+        </form>
+    </div>
+</div>
+
+
+
+<div
+    style="background-color: #f8f9fa; max-width: 1000px; margin-left: auto; margin-right: auto; padding: 20px; border: 5px solid rgb(0, 128, 128); border-radius: 10px; text-align: center;">
+    <h3 style="color: #100622; font-size: 30px;">Company Information Table</h3>
+
+    <table
+        style="width: 100%; border-collapse: collapse; background-color: white; box-shadow: 0 2px 8px rgba(0,0,0,0.1); color:black">
+        <thead>
+            <tr style="background-color: #002aff; color: white;">
+                <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Company Information</th>
+                <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Details</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr style="background-color: #bcbed2;">
+                <td style="padding: 12px; border: 1px solid #ddd;">Company Name</td>
+                <td style="padding: 12px; border: 1px solid #ddd;">Adorned by Bommiee</td>
+            </tr>
+
+            <tr>
+                <td style="padding: 12px; border: 1px solid #ddd;">Tagline</td>
+                <td style="padding: 12px; border: 1px solid #ddd;">Crafting Confidence</td>
+            </tr>
+
+            <tr style="background-color: #bcbed2;">
+                <td style="padding: 12px; border: 1px solid #ddd;">Founded</td>
+                <td style="padding: 12px; border: 1px solid #ddd;">2020</td>
+            </tr>
+
+            <td style="padding: 12px; border: 1px solid #ddd;">Headquarters</td>
+            <td style="padding: 12px; border: 1px solid #ddd;">Abeokuta, Ogun State</td>
+            </tr>
+
+            <tr style="background-color: #bcbed2;">
+                <td style="padding: 12px; border: 1px solid #ddd;">Founder/CEO</td>
+                <td style="padding: 12px; border: 1px solid #ddd;">Bamgbose Janet Olasubomi</td>
+            </tr>
+
+            <td style="padding: 12px; border: 1px solid #ddd;">Mission Statement</td>
+            <td style="padding: 12px; border: 1px solid #ddd;">To provide high-quality, affordable fashion to our
+                customers while promoting sustainability and self-confidence</td>
+            </tr>
+
+            <tr style="background-color: #bcbed2;">
+                <td style="padding: 12px; border: 1px solid #ddd;">Vision Statement</td>
+                <td style="padding: 12px; border: 1px solid #ddd;">To become a leading fashion brand Worldwide, known
+                    for our unique designs and commitment to customer satisfaction</td>
+            </tr>
+
+            <td style="padding: 12px; border: 1px solid #ddd;">Values</td>
+            <td style="padding: 12px; border: 1px solid #ddd;">Quality, Sustainability, and Customer Satisfaction</td>
+            </tr>
+
+            <tr style="background-color: #bcbed2;">
+                <td style="padding: 12px; border: 1px solid #ddd;">Products</td>
+                <td style="padding: 12px; border: 1px solid #ddd;">Clothing, Accessories</td>
+            </tr>
+
+            <td style="padding: 12px; border: 1px solid #ddd;">Target market</td>
+            <td style="padding: 12px; border: 1px solid #ddd;">Young, Adults, Fashion Enthusiasts</td>
+            </tr>
+
+            <tr style="background-color: #bcbed2;">
+                <td style="padding: 12px; border: 1px solid #ddd;">Social Media</td>
+                <td style="padding: 12px; border: 1px solid #ddd;">IG handle: @olabommiee; Page link:
+                    http://127.0.0.1:5500/HTML/Exercise6.html</td>
+            </tr>
+
+            <td style="padding: 12px; border: 1px solid #ddd;">Contact Information</td>
+            <td style="padding: 12px; border: 1px solid #ddd;">Phone number: 08063958454; email:
+                bamgbosejanet10@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+
+
+
+<!-- Image gallery -->
+
+<div style="background-color: #dcecec; margin-top: 25px; max-width: 1000px; margin-left: auto; margin-right: auto"
+    border-radius: 10px;">
+    <h2 style="color: #28185a; align-items: center; text-align: center;">Image Gallery (Catalogue)</h2>
+
+    <!-- Basic Image -->
+    <div style="display:flex; flex-wrap: wrap; gap: 15px; max-width: 1000px; margin-left: auto; margin-right: auto">
+        <div style="margin-bottom: 20px; color:black">
+            <h4>picture 1</h4>
+            <img src="/images/style1.jpg" alt="Images"
+                style="border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); max-width: 100%;">
+        </div>
+
+        <div style="margin-bottom: 20px; color:black">
+            <h4>picture 2</h4>
+            <img src="/images/style2.jpg" alt="Images"
+                style="border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); max-width: 100%;">
+        </div>
+
+        <div style="margin-bottom: 20px; color:black">
+            <h4>picture 3</h4>
+            <img src="/images/style3.jpg" alt="Images"
+                style="border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); max-width: 100%;">
+        </div>
+
+        <div style="margin-bottom: 20px; color:black">
+            <h4>picture 4</h4>
+            <img src="/images/style4.jpg" alt="Images"
+                style="border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); max-width: 100%;">
+        </div>
+
+        <div style="margin-bottom: 20px; color:black">
+            <h4>picture 5</h4>
+            <img src="/images/style5.jpg" alt="Images"
+                style="border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); max-width: 100%;">
+        </div>
+
+        <div style="margin-bottom: 20px; color:black">
+            <h4>picture 6</h4>
+            <img src="/images/style6.jpg" alt="Images"
+                style="border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); max-width: 100%;">
+        </div>
+
+        <div style="margin-bottom: 20px; color:black">
+            <h4>picture 7</h4>
+            <img src="/images/style7.jpg" alt="Images"
+                style="border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); max-width: 100%;">
+        </div>
+
+        <div style="margin-bottom: 20px; color:black">
+            <h4>picture 8</h4>
+            <img src="/images/style8.jpg" alt="Images"
+                style="border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); max-width: 100%;">
+        </div>
+
+        <div style="margin-bottom: 20px; color:black">
+            <h4>picture 9</h4>
+            <img src="/images/style9.jpg" alt="Images"
+                style="border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); max-width: 100%;">
+        </div>
+
+        <div style="margin-bottom: 20px; color:black">
+            <h4>picture 10</h4>
+            <img src="/images/style10.jpg" alt="Images"
+                style="border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); max-width: 100%;">
+        </div>
+
+        <div style="margin-bottom: 20px; color:black">
+            <h4>picture 11</h4>
+            <img src="/images/style11.jpg" alt="Images"
+                style="border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); max-width: 100%;">
+        </div>
+
+        <div style="margin-bottom: 20px; color:black">
+            <h4>picture 12</h4>
+            <img src="/images/style12.jpg" alt="Images"
+                style="border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); max-width: 100%;">
+        </div>
+
+        <div style="margin-bottom: 20px; color:black">
+            <h4>picture 13</h4>
+            <img src="/images/style13.jpg" alt="Images"
+                style="border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); max-width: 100%;">
+        </div>
+
+        <div style="margin-bottom: 20px; color:black">
+            <h4>picture 14</h4>
+            <img src="/images/style14.jpg" alt="Images"
+                style="border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); max-width: 100%;">
+        </div>
+
+        <div style="margin-bottom: 20px; color:black">
+            <h4>picture 15</h4>
+            <img src="/images/style15.jpg" alt="Images"
+                style="border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); max-width: 100%;">
+        </div>
+
+        <div style="margin-bottom: 20px; color:black">
+            <h4>picture 16</h4>
+            <img src="/images/style16.jpg" alt="Images"
+                style="border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); max-width: 100%;">
+        </div>
+    </div>
+</div>

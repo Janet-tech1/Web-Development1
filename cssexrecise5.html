@@ -1,0 +1,177 @@
+<!-- ## 🎯 Practice Exercise 1
+
+**Task:** Create a "Sticky Header" layout
+
+**Requirements:**
+- Create a header that stays at the top when scrolling (fixed position)
+- Include a navigation menu with inline-block items
+- Add some content below that you can scroll through
+- Use proper z-index to ensure header stays on top
+- Style with colors and spacing for visual appeal -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Header</title>
+    <style>
+        .sticky-container {
+            background-image: linear-gradient(grey, rgb(170, 240, 170), grey);
+            background-repeat: no-repeat;
+            padding: 20px; 
+            margin: 20px 0;
+            border-radius: 8px;
+            height: 500px;
+            overflow-y: scroll;
+            border: 2px solid #dee2e6;
+            color: black;
+        }
+    
+        .sticky-header {
+            position: sticky;
+            font-size: 40px;
+            top: 0;
+            background-color: #71a851;
+            color: white;
+            padding: 35px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+    
+        .chapters {
+            background-color: rgb(211, 235, 183);
+            padding: 30px 20px;
+            padding-top: 30px;
+            margin-bottom: 40px;
+            border-radius: 12px;
+            height: 150px;
+            margin-top: 40px;
+        }
+        .chapters h4 {
+            font-size: 20px;
+        }
+        .chapters p {
+            font-size: 20px;
+        }
+    
+        .content-section h4 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+
+        .navigation {
+            background-color: #858f3a;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 10px;  
+        }
+    
+        .nav-item {
+            display: inline-block;
+            padding: 8px 90px;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-right: 45px;
+        }
+    
+        .nav-item:hover {
+            background-color: #71a851;
+            color: black;
+        }
+
+        .image-text {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+            gap: 20px;
+        }
+        .image1 {
+            height: 100px;
+            width: 250px;
+            padding: 0 200px;
+            padding-bottom: 60px;
+        }
+        .image-2 {
+            height: 100px;
+            width: 250px;
+            padding: 0 200px;
+            padding-left: 20px;
+            padding-bottom: 60px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="sticky-container">
+
+        <nav class="navigation">
+            <div class="highlight">
+                <a href="#" class="nav-item">Home</a>
+                <a href="#" class="nav-item">Chapter 1</a>
+                <a href="#" class="nav-item">Chapter 2</a>
+                <a href="#" class="nav-item">Chapter 3</a>
+                <a href="#" class="nav-item">Chapter 4</a>
+                <a href="#" class="nav-item">Chapter 5</a>
+            </div>
+        </nav>
+
+        <div class="sticky-header">
+            <section id="home">
+                "A Joyful SummerFest Celebration"
+            </section>
+        </div>
+
+        <div class="chapters">
+            <section id="chapter 1">
+                <div class="image-text">
+                    <h4>Chapter 1</h4>
+                    <p>As the sun rose over the small town of Willow Creek, a sense of excitement filled the air. Today was the day of the annual SummerFest celebration, and everyone in town was buzzing with anticipation. Emma, a bright-eyed 10-year-old, couldn't wait to try all the delicious foods, play games, and watch the fireworks display. She had been looking forward to this day for weeks.</p>
+                    <div class="image1">
+                        <img src="../../images/emma3.jpg" alt="Happy Emma">
+
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="chapters">
+            <section id="chapter 2">
+                <div class="image-text">
+                    <h4>Chapter 2</h4>
+                    <p>Emma's mom, Sarah, was busy setting up their family booth, where they would be setting homemade lemonade and baked goods. She was determined to make this the best SummerFest yet, and she had spent hours perfecting her secret recipe for lemon bars. As she arranged the treats on the table, the sweet aroma wafted through the air, enticing the passersby to come and sample their wares.</p>
+                    <div class="image2">
+                        <img src="../../images/emmamom.jpg" alt="Emma's Mom">
+
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="chapters">
+            <section id="chapter 3">
+                <h4>Chapter 3</h4>
+                <p>At the morning wore on, the festival grounds began to fill with people of all ages. Emma ran off to play games and ride the Ferris wheel, while Sarah tended to the booth and chatted with friends. The atmosphere was lively and joyful, with music playing and laughter ringing out, it was days like these that reminded Sarah why she loved living in Willow Creek.</p>
+            </section>
+        </div>
+
+        <div class="chapters">
+            <section id="chapter 4">
+                <h4>Chapter 4</h4>
+                <p>Just as Emma was finishing up her lunch, She heard the announcement that the SummerFest parade was about to start. She rushed back to the booth, excitement building in her chest. She loved watching the floats, matching bands, and of course, the giant ballons. As the parade began, Emma and Sarah found a spot on the curb and waited for the festivitie to begin.</p>
+            </section>
+        </div>
+
+        <div class="chapters">
+            <section id="chapter 5">
+                <h4>Chapter 5</h4>
+                <p>The parade was everything Emma had hoped for and more. She cheered and clapped along with the rest of the crowd, feeling the infectious energy of the celebration. As the final float passed by, Emma turned to her mom with a huge smile on her face. "Best SummerFest ever" she exclaimed. Sarah smiled back, happy to see her daughter having such a wonderful time.</p>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
