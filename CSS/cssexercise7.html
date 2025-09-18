@@ -15,3 +15,191 @@
 
 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    .main-container {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        color:black;
+    }
+    
+    /* Perfect centering */
+    .hero-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        background-image: linear-gradient(#513b32, rgb(228, 153, 15));
+        color: white;
+        text-align: center;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
+    /* Navigation layout */
+    .navigations {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #3a261e;
+        padding: 0;
+        height: 150px;
+        border-radius: 2px;
+        margin-bottom: 20px;
+    }
+    
+    .nav-logo {
+        font-weight: bold;
+        height: 70;
+        border-radius: 2px;
+        padding-top: 6px;
+    }
+    
+    .nav-links {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        padding: 8px 10px;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+    }
+    
+    .nav-links a:hover {
+        background-color: rgba(255,255,255,0.1);
+    }
+
+    /* Equal height cards */
+    .card-grid {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .card {
+        flex: 1;
+        background-color: white;
+        width: 200px;
+        padding: 20px;
+        padding-left: 40px;
+        max-width: fit-content;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        border: 1px solid #e9ecef;
+    }
+    
+    .card2 {
+        flex: 1;
+        background-color: white;
+        width: 200px;
+        padding: 20px;
+        padding-left: 40px;
+        max-width: fit-content;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        border: 1px solid #e9ecef;
+    }
+    
+    .card p {
+        color: #6c757d;
+        line-height: 1.5;
+        margin-bottom: 15px;
+        flex-grow: 1;
+    }
+    
+    .card-button {
+        background-color: #007bff;
+        color: white;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: auto;
+    }
+    
+    .card-button:hover {
+        background-color: #0056b3;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="hero-section">
+            <div>
+                <h2>The Daily Grind</h2>
+                <p>Coffee to get you through the day</p>
+            </div>
+        </div>
+
+        <nav class="navigations">
+        <div class="nav-logo">
+            <img src="../../images/cofe.png" alt="coffee">
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Menu</a>
+            <a href="#">Contact</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+    </div>
+
+    <div class="card-grid">
+        <div class="card">
+            <img src="../../images/coffeesnack1.jpg" alt="coffee menu">
+            <p>Rich espresso, velvety steamed milk, and a drizzle of caramel syrup come together in this decadent macchiato. Topped with whipped cream and cramel sauce.</p>
+            <a href="#" class="card-button">Caramel Macchiato</a>
+        </div>
+        
+        <div class="card">
+            <img src="../../images/coffeesnack2.jpg" alt="coffee menu">
+            <p>Fresh doughtnuts and a hint of sweetness in a moist and fluffy muffin with coffe.</p>
+            <a href="#" class="card-button">Cinnamon Dolce</a>
+        </div>
+        
+        <div class="card">
+            <img src="../../images/coffeesnack3.jpg" alt="coffee menu">
+            <p>Warm and gooey chocolate cake, served with coffee.</p>
+            <a href="#" class="card-button">Peppermint Mocha</a>
+        </div>
+    </div>
+
+     <div class="card-grid">
+        <div class="card">
+            <img src="../../images/coffeesnack4.jpg" alt="coffee menu">
+            <p>Flaky, buttery croissant filled with rich chocolate, perfect for pairing with coffee.</p>
+            <a href="#" class="card-button">Vanilla latte</a>
+        </div>
+        
+        <div class="card">
+            <img src="../../images/coffeesnack5.jpg" alt="coffee menu">
+            <p>A perfect blend of espresso, steamed milk, and foam.</p>
+            <a href="#" class="card-button">Cappuccino</a>
+        </div>
+        
+        <div class="card">
+            <img src="../../images/coffeesnack6.jpg" alt="coffee menu">
+            <p>Espresso dilutted with hot water, served with a slice of lemon.</p>
+            <a href="#" class="card-button">Americano</a>
+        </div>
+    </div>
+
+
+    
+  
+</body>
+</html>
