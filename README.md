@@ -2,38 +2,51 @@
 ##Exercise1:  Write your full name inside an `<h1>` tag and use internal CSS to change its color to yellow.  
 2. Write three list items inside an unordered list and use internal CSS to make the list text purple and italic.  
 3. Add a heading that says **"My Favorite Color"** and style it with your favorite color.
-[CSSExercise1](https://github.com/user-attachments/assets/7b2d931f-df8d-498e-9f94-51396d94b021)
+![Image](https://github.com/user-attachments/assets/96ea8a9c-b3ac-45b3-a69c-ae789eb103b0)
 
 ##Exercise2: About Me
-[CSSExercise2](https://github.com/user-attachments/assets/6a425b15-114d-4c33-8ebc-a627647efba9)
+![Image](https://github.com/user-attachments/assets/a8927ff4-838d-4811-bf5f-51a259e06499)
 
 ##Exercise3: My Favorite Quote
-[CSSExercise3](https://github.com/user-attachments/assets/00f6ec93-e54d-4b0a-8041-5991cd312354)
+![Image](https://github.com/user-attachments/assets/869bbfac-93ac-410e-b97a-b7058e2055c5)
 
 ##Exercise5: Sticky Header
-[CSSExercise5 1](https://github.com/user-attachments/assets/1b454a8a-8e28-4465-becb-9b1446d09780)
-[CSSExercise5 2](https://github.com/user-attachments/assets/1213b1c1-db0d-49fc-a681-04f853edd180)
-[CSSExercise5 3](https://github.com/user-attachments/assets/41e92a74-e75f-43fc-a901-bb77958c9c38)
-[CSSExercise5 4](https://github.com/user-attachments/assets/95e2d00d-9638-4ffe-a4d3-a3499f53a950)
-[CSSExercise5 5](https://github.com/user-attachments/assets/096d37bb-ce1b-43e4-b07a-6d31dd078663)
-[CSSExercise5 6](https://github.com/user-attachments/assets/26b0e397-4bb3-4748-862e-9aba21641600)
+![Image](https://github.com/user-attachments/assets/8b7282a1-04fe-4576-aeea-17ead2c6abe9)
+
+![Image](https://github.com/user-attachments/assets/c97ab9fa-a0d9-4803-a42f-a7d47a2b683c)
+
+![Image](https://github.com/user-attachments/assets/5f283a68-ea84-40da-a602-b8d49c827eaf)
+
+![Image](https://github.com/user-attachments/assets/b6aea069-e952-4c5d-9156-cdff0fa3a6d8)
+
+![Image](https://github.com/user-attachments/assets/b84c53bb-cdce-4cb3-8eba-b91e5fd6a867)
+
+![Image](https://github.com/user-attachments/assets/bbb07e60-48bd-40c7-a7f1-c7ebb990bc6c)
 
 ##Exercise6:Holy Grail
-[CSSExercise6 1](https://github.com/user-attachments/assets/583c9b92-3aca-40c5-a441-3cc8f021310a)
-[CSSExercise6 2](https://github.com/user-attachments/assets/641dc8bd-d090-49d7-b5c6-7d074d10cde7)
-[CSSExercise6 3](https://github.com/user-attachments/assets/3153ab82-e117-4052-ad5c-21089d01c1be)
+![Image](https://github.com/user-attachments/assets/4d7f0efb-a441-4a52-8d66-cb503180f34d)
+
+![Image](https://github.com/user-attachments/assets/51645c0b-53f5-4ca2-a440-83efa164cf65)
+
+![Image](https://github.com/user-attachments/assets/a4ac996f-82ed-4427-b4ec-7d22d209a966)
 
 ##Exercise7: Dashboard Layout
-[CSSExercise7 1](https://github.com/user-attachments/assets/29403f8c-0531-46ea-a4f7-b141342f8091)
-[CSSExercise7 2](https://github.com/user-attachments/assets/b031d6c1-9860-48ec-9119-4c45ebaa54ad)
-[CSSExercise7 3](https://github.com/user-attachments/assets/4b8151ab-d5e9-4ea4-9810-60be4f80e65f)
+![Image](https://github.com/user-attachments/assets/3aca7a00-f6f1-4e83-bd7d-02a00abe455a)
+
+![Image](https://github.com/user-attachments/assets/eb726bf6-84b9-4c59-bbfa-06097c6bee96)
+
+![Image](https://github.com/user-attachments/assets/3540520b-f6ef-4f9c-8109-973f4d5f3647)
 
 ##Exercise8: Magazine Layout
-[CSSExercise8 1](https://github.com/user-attachments/assets/827f0bba-92eb-4e16-9c72-e19cd461efe4)
-[CSSExercise8 2](https://github.com/user-attachments/assets/e575ce33-87ba-4b3a-9435-8788dbf8aee7)
-[CSSExercise8 3](https://github.com/user-attachments/assets/f27862d2-5144-45b9-add9-2f901979087a)
-[CSSExercise8 4](https://github.com/user-attachments/assets/7fb93fef-ddf4-43d3-af76-6f4d01bf628a)
-[CSSExercise8 5](https://github.com/user-attachments/assets/7b1c449a-0cdc-464e-9aeb-5e4feb01c742)
+![Image](https://github.com/user-attachments/assets/22e31d50-8d19-41b1-ae14-07d5c05c8f64)
+
+![Image](https://github.com/user-attachments/assets/85a23107-28a0-4797-bc13-134b4b0b8baa)
+
+![Image](https://github.com/user-attachments/assets/1d578719-816d-4295-820a-9412e9b77bc1)
+
+![Image](https://github.com/user-attachments/assets/b3d45544-32bc-408c-9748-390c1be6b7e5)
+
+![Image](https://github.com/user-attachments/assets/e5b756f3-57fd-4546-b309-2ddc71326e06)
 
 
 
