@@ -1,0 +1,248 @@
+<!-- **Task:** Create a "Magazine Layout" using CSS Grid
+
+**Requirements:**
+- Header spanning full width
+- Featured article taking 2/3 width on left
+- Sidebar with 3 smaller articles stacked on right
+- Advertisement banner below featured article
+- Footer spanning full width
+- Use grid-template-areas for clean code
+- Include proper spacing and visual hierarchy
+
+**Bonus Challenges:**
+- Make one small article span 2 rows in the sidebar
+- Add a navigation bar in the header
+- Use auto-fit for responsive article cards in a section -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .layout-grid {
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "main main sidebar1"
+                "main main sidebar2"
+                "main main sidebar3"
+                "footer footer footer";
+            grid-template-columns: repeat(1fr 3);
+            grid-template-rows: auto 1fr auto;
+            gap: 15px;
+            height: 1200px;
+            background-image: url(../../images/tokyo.png);
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .grid-header {
+            grid-area: header;
+            width: auto;
+            background-color: #0f1629;
+            color: white;
+            padding: 20px ;
+            text-align: center;
+            border-radius: 4px;
+            flex-direction: column;
+        }
+
+
+        /* Navigation layout */
+        .navigations {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            padding: 0;
+            height: 30px;
+            width: 100%;
+            max-width: 100%;
+            border-radius: 2px;
+            margin-bottom: 30px;
+        }
+
+        .nav-logo {
+            padding: 30px;
+            font-size: 70px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 10px;
+            border-radius: 4px; 
+        }
+
+        .nav-links a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .grid-main {
+            grid-area: main;
+            padding: 20px;
+            height: 1000;
+            border-radius: 4px;
+            background-color: none;
+            width: auto;
+            color: white;
+            padding: 20px;
+            border-radius: 4px;
+        }
+
+        .ad {
+            grid-area: ad;
+            background: #0744eb;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+            color: black;
+            border-radius: 8px;
+        }
+
+        .grid-sidebar {
+            display: grid;
+            grid-area: sidebar;
+            background-color: #34495e;
+            color: white;
+            margin: 0;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .grid-sidebar h4,
+        .grid-main h4 {
+            margin-top: 0;
+            font-size: 25px;
+            color: whitesmoke;
+        }
+
+         .grid-sidebar p,
+        .grid-main p {
+            /* margin-top: 0; */
+            font-size: 20px;
+            color: white;
+        }
+
+        .sidebar1 {
+            background-image: linear-gradient(rgb(111, 158, 234), rgb(50, 71, 113));
+            padding: 5px;
+            height: 300px;
+            border-radius: 5px;
+            margin: 5px;
+
+        }
+
+        .sidebar2 {
+            background-image: linear-gradient(rgb(111, 158, 234), rgb(50, 71, 113));
+            padding: 5px;
+            border-radius: 5px;
+            height: 300px;
+            margin: 5px;
+        }
+
+        .sidebar3 {
+           background-image: linear-gradient(rgb(111, 158, 234), rgb(50, 71, 113));
+            padding: 5px;
+            height: 300px;
+            border-radius: 5px;
+            margin: 5px;
+
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: #0f1629;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin-top: 5px;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="layout-grid">
+        <div class="grid-header">
+            <nav class="navigations">
+                <div class="nav-logo">
+                    <h4>Travel Magazine</h4>
+                </div>
+                <div class="nav-links">
+                    <a href="#">Home</a>
+                    <a href="#">Lifestyle</a>
+                    <a href="#">Travel</a>
+                    <a href="#">About</a>
+                    <a href="#"><i class="fa-solid fa-bars"></i></a>
+                </div>
+            </nav>
+
+        </div>
+        <main class="grid-main">
+            <h4>Exploring the Wonders of Italy</h4>
+            <p>Italy is more than just a destination—it’s an experience that lingers long after the journey ends. In
+                Venice, gondolas glide silently through narrow canals, while Renaissance palaces reflect on the
+                shimmering waters. Rome, the eternal city, greets visitors with ancient wonders like the Colosseum and
+                Roman Forum, where history whispers from every stone.But Italy is not only about its past—it’s about
+                savoring life in the present. Indulge in creamy gelato on a summer evening, enjoy authentic pasta in a
+                family-run trattoria, or sip rich espresso in a bustling piazza. Each region has its own story to tell,
+                from Tuscany’s rolling vineyards to the dramatic cliffs of the Amalfi Coast.</p>
+            <h4>Safari Adventures in Kenya</h4>
+            <p>Kenya is a land where nature comes alive in its most dramatic form. The golden savannah stretches
+                endlessly, dotted with acacia trees and grazing herds of zebra, wildebeest, and giraffes. The Masai Mara
+                is world-famous for the Great Migration, when millions of animals cross rivers teeming with crocodiles
+                in one of the greatest wildlife spectacles on Earth.Beyond the safari drives, Kenya offers a chance to
+                connect with culture and community. Spend time with the Maasai people, who share stories of tradition
+                and resilience, or relax along the white-sand beaches of Diani after days of adventure. In Kenya, every
+                sunrise feels like a painting, and every sunset promises another wild tomorrow.</p>
+            <h4>Paris – City of Lights</h4>
+            <p>Paris captivates the soul with its elegance and charm. Strolling along the Seine, you’ll find iconic
+                landmarks such as Notre-Dame, the Louvre, and the Eiffel Tower—symbols of romance and timeless beauty.
+                The streets are alive with the aroma of fresh pastries, while artists sketch at Montmartre, continuing a
+                legacy of creativity. But Paris is more than just monuments—it’s a lifestyle. Locals savor quiet moments
+                at outdoor cafés, reading books over steaming coffee, while chic boutiques line the boulevards. By
+                night, the city transforms into a glittering wonderland, with the Eiffel Tower shimmering like a beacon
+                over the skyline. In Paris, every moment feels like poetry.</p>
+
+                <div class="ad">Advertisement Banner<div>
+            </div>
+
+        </main>
+
+        <div class="sidebar">
+            <div class="sidebar1">
+                <h2><u>Top 2 Beaches</u></h2>
+                <p>Tokyo may be a city of neon lights and fast-paced energy, but just beyond the skyline lie stretches of sand where the sea meets serenity. One of the most popular escapes is Zushi Beach, a relaxed coastal spot loved by families and surfers. On clear days, the sight of Mount Fuji rising beyond the waves creates an unforgettable backdrop. Another favorite is Enoshima Beach, found on the lively island of Enoshima. Visitors can stroll across the bridge from the mainland, enjoy fresh seafood, explore shrines, and then cool off in the water. Summer festivals often fill the shoreline with music and lanterns.</p>
+            </div>
+            <div class="sidebar2">
+                <h2><u>Adventure in the Alps</u></h2>
+                <p>For thrill seekers, the Alps offer world-class skiing, hiking trails, and sweeping mountain vistas that will leave you in awe. The Alps are a playground for adventurers and dreamers alike, stretching across eight countries with landscapes that feel straight out of a storybook. Snowcapped peaks rise above emerald valleys, glacial lakes sparkle in the sun, and alpine villages dot the mountainsides with their wooden chalets and flower-filled balconies. Whether blanketed in snow or bursting with summer wildflowers, the Alps are alive with beauty all year round.</p>
+            </div>
+            <div class="sidebar3">
+                <h2><u>City Lights: Tokyo</u></h2>
+                <p>Tokyo is a city that never truly sleeps, glowing with an energy that dazzles travelers the moment they arrive. By day, it’s a place of contrasts, where centuries-old temples stand quietly beneath towering skyscrapers. By night, it transforms into a shimmering metropolis, its streets illuminated with neon signs, bustling crowds, and endless entertainment. In neighborhoods like Shinjuku and Shibuya, the city pulses with excitement. Towering digital billboards, busy crossings, karaoke bars, and izakayas (cozy pubs) create a lively atmosphere that captures Tokyo’s modern heart.</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p><i class="fa-solid fa-copyright"></i>2025 Travel Magazine | All Rights Reserved</p>
+        </div>
+    </div>
+    </div>
+
+
+</body>
+
+</html>

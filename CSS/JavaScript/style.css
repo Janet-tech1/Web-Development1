@@ -10,10 +10,12 @@ body {
     align-items: center;
     justify-content: center;
 }
-
+.active {
+    background-image: linear-gradient(yellow, green);
+}
 
 .container {
-    background-color: rgb(162, 210, 30);
+    background-image: linear-gradient(rgb(71, 193, 71), rgb(238, 238, 40));
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -22,12 +24,10 @@ body {
     justify-content: center;
     align-items: center;
     height: 200px;
-    /* height: fit-content; */
     border-radius: 20px;
 }
 
-.about {
-    
+.about {  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,13 +36,19 @@ body {
 }
 
 button {
-    background-color: rgb(13, 15, 5);
+    background-image: linear-gradient(yellow, green);
+    border-radius: 20px;
     border: none;
     color: aliceblue;
     border-radius: 2px;
+    height: 20px;
 }
 
 .myinfo {
     font-size: 15px;
     color: black;
+}
+
+.myinfo p {
+    display: none;
 }
