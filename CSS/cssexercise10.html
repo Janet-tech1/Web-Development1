@@ -1,0 +1,105 @@
+<!-- **Task:** Create a "Modern Portfolio Website" using all Day 3 techniques
+
+**Requirements:**
+- Complete responsive layout using CSS Grid and Flexbox
+- Light/dark theme switching with CSS variables
+- Smooth animations and hover effects
+- Mobile-first responsive design with media queries
+- Modern CSS features (clamp, aspect-ratio, etc.)
+- Interactive navigation with animations
+- Hero section with animated background
+- Project gallery with hover animations
+- Contact form with interactive states
+
+**Layout Structure:**
+- Header with navigation (fixed/sticky)
+- Hero section with call-to-action
+- About section with image and text
+- Skills section with animated progress bars
+- Portfolio grid with hover effects
+- Contact section with form
+- Footer with social links -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Information Display</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card h2 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .info {
+      text-align: left;
+      margin-top: 20px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .highlight {
+      color: #2575fc;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card" id="infoCard">
+    <h2>Personal Information</h2>
+    <div class="info" id="personalInfo"></div>
+  </div>
+
+  <script>
+    // 1. Variables
+    let firstName = "Janet";
+    let lastName = "Smith";
+    let age = 25;
+    let isStudent = true;
+    let favoriteColor = "Blue";
+
+    // 2. Calculate age in 5 years
+    let futureAge = age + 5;
+
+    // 3. Create formatted info with template literals
+    let personalInfo = `
+      👤 <span class="highlight">Name:</span> ${firstName} ${lastName} <br>
+      🎂 <span class="highlight">Current Age:</span> ${age} years old <br>
+      📘 <span class="highlight">Student Status:</span> ${isStudent ? "Yes, currently a student" : "No"} <br>
+      🎨 <span class="highlight">Favorite Color:</span> ${favoriteColor} <br><br>
+      ✨ <span class="highlight">In 5 years:</span> You will be ${futureAge} years old.
+    `;
+
+    // 4. Insert into page
+    document.getElementById("personalInfo").innerHTML = personalInfo;
+  </script>
+
+</body>
+</html>
