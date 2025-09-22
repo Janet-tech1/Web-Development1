@@ -1,12 +1,10 @@
 #CSS Exercises
-<<<<<<< HEAD
-##Exercise1:  Write your full name inside an `<h1>` tag and use internal CSS to change its color to yellow.  Write three list items inside an unordered list and use internal CSS to make the list text purple and italic. Add a heading that says **"My Favorite Color"** and style it with your favorite color.
-=======
 
-## Exercise1:  Write your full name inside an `<h1>` tag and use internal CSS to change its color to yellow.  
+## Exercise1:  Write your full name inside an h1 tag and use internal CSS to change its color to yellow.  
 2. Write three list items inside an unordered list and use internal CSS to make the list text purple and italic.  
 3. Add a heading that says **"My Favorite Color"** and style it with your favorite color.
->>>>>>> 6ee809e06e689cab01b194c4bcc975f8e1e3095a
+ 6ee809e06e689cab01b194c4bcc975f8e1e3095a
+
 ![Image](https://github.com/user-attachments/assets/96ea8a9c-b3ac-45b3-a69c-ae789eb103b0)
 
 ## Exercise2: About Me
@@ -56,14 +54,6 @@
 
 ## Exercise9: Interactive Dashboard
 ![Screenshot_22-9-2025_12435_127 0 0 1](https://github.com/user-attachments/assets/ef96f94b-c669-4058-88a8-152c4d315ae5)
-<<<<<<< HEAD
-=======
-
-
-
-
->>>>>>> 6ee809e06e689cab01b194c4bcc975f8e1e3095a
-
 
 
 
