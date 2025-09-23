@@ -1,20 +1,20 @@
 // Task 1
 
 function getGrade() {
-    let myscore = prompt("Enter your score: ");
+    let score = prompt("Enter your score: ");
 
-    if (myscore === 100) {
-        console.log("Score:", myscore, " -> Outstanding! Grade: A+")
-    } else if (myscore >= 90) {
-        console.log("Score:", myscore, " -> Grade: A - Excellent!");
-    } else if (myscore >= 80) {
-        console.log("Score:", myscore, " -> Grade: B - Good work!");
-    } else if (myscore >= 70) {
-        console.log("Score:", myscore, " -> Grade: C - Satisfactory");
-    } else if (myscore >= 60) {
-        console.log("Score:", myscore, " -> Grade: D - Needs improvement");
+    if (score === 100) {
+        console.log("Score:", score, " -> Outstanding! Grade: A+")
+    } else if (score >= 90) {
+        console.log("Score:", score, " -> Grade: A - Excellent!");
+    } else if (score >= 80) {
+        console.log("Score:", score, " -> Grade: B - Good work!");
+    } else if (score >= 70) {
+        console.log("Score:", score, " -> Grade: C - Satisfactory");
+    } else if (score >= 60) {
+        console.log("Score:", score, " -> Grade: D - Needs improvement");
     } else {
-        console.log("Score:", myscore, " -> Grade: F - Please see instructor");
+        console.log("Score:", score, " -> Grade: F - Please see instructor");
     }
     console.log("")  //Empty line
 }
@@ -22,42 +22,40 @@ function getGrade() {
 
 // TASK 2
 
-// function calculatePrice(price, customerType, isFirstTime) {
-//     // let price = prompt("Enter price:");
-//     // let customerType = prompt("Are you a student, senior or an employee?");
-//     // let isFirstPurchase = confirm("Is this your first purchase at our store?");
+function calculatePrice() {
+    let discount = 0;
+    let price = Number(prompt("Enter price:"));
+    let customerType = prompt("Are you a student, senior or an employee?");
+    let isFirstPurchase = confirm("Is this your first purchase at our store?");
 
-//     // function calculatePrice(price, customerType, isFirstTime) {
-//     let discount = 0;
+    if (customerType === "student") {
+        console.log(`${discount = 0.10}`);
+    } else if (customerType === "senior") {
+        console.log(`${discount = 0.15}`);
+    } else if (customerType === "employee"){
+        console.log(`${discount = 0.20}`);
+    }
 
-//     if (customerType === "student") {
-//         discount = 0.10; // 10% discount
-//     } else if (customerType === "senior") {
-//         discount = 0.15; // 15% discount
-//     } else if (customerType === "employee") {
-//         discount = 0.20; // 20% discount
-//     }
+    // Additional discount for first-time customers
+    if (isFirstPurchase) {
+        console.log(`${discount += 0.05}`);
+    }
 
-//     // Additional discount for first-time customers
-//     if (isFirstTime) {
-//         discount += 0.05; // Extra 5%
-//     }
+    let finalPrice = price * (1 - discount);
+    console.log ({
+        originalPrice: price,
+        discountPercent: discount * 100,
+        finalPrice: finalPrice.toFixed(2)
+    });
 
-//     let finalPrice = price * (1 - discount);
-//     return {
-//         originalPrice: price,
-//         discountPercent: discount * 100,
-//         finalPrice: finalPrice.toFixed(2)
-//     };
+    console.log(calculatePrice());
+    console.log("Price calculation:");
+    console.log(`Original: #${price}`);
+    console.log(`Discount: ${discountPercent}%`);
+    console.log(`Final price: #${finalPrice}`);
 
-//     let result = calculatePrice(100, "student", true);
-//     console.log("Price calculation:");
-//     console.log(`Original: $${result.originalPrice}`);
-//     console.log(`Discount: ${result.discountPercent}%`);
-//     console.log(`Final price: $${result.finalPrice}`);
-
-//     console.log("")  //Empty line
-// }
+    console.log("")  //Empty line
+}
 
 
 
@@ -89,7 +87,7 @@ function weatherAdvice() {
 }
 
 
-// TASK 4
+// // TASK 4
 
 function atmSimulation() {
     let balance = prompt("Enter your account balance:")
@@ -104,14 +102,14 @@ function atmSimulation() {
         console.log(`You have successfully withdrawn #${amount}`)
         console.log(`The remaining balance is #${remainingBalance}`)
 
-    }  else if (action === "withdraw" && balance < amount) {
+    } else if (action === "withdraw" && balance < amount) {
         console.log("Insufficient funds.")
 
-    } 
+    }
     // else if (action === "withdraw" && amount < 500) {
     //     console.log("You cannot withdraw less than 1000")
     // }
-    
+
     if (action === "deposit") {
         console.log(`Your account balance is #${balance}`)
         console.log(`You have successfully deposited #${amount}`)
@@ -120,4 +118,51 @@ function atmSimulation() {
     }
 
     console.log("")  //Empty line
+}
+
+
+//Task 5
+function personalAssistant() {
+    let time = prompt("Enter time in hour (1-24):");
+    let weather = prompt("Is it sunny, rainy, or cloudy:");
+    let daytype = prompt("Is it weekend, workday or holiday:");
+
+
+    console.log(`Time: ${time}hour`);
+
+    let hour = time <= 24? "It's time to sleep. Goodnight!" : "Enter a time between 1 and 24";
+    console.log(hour)
+
+    if (isNaN(time)) {
+        console.log("Invalid time. Please enter a valid time.")
+    } else if (time < 5) {
+        console.log("It's too early, get some more rest.");
+    } else if (time < 12) {
+        console.log("Good morning. It's time to start the day.");
+    } else if (time < 16) {
+        console.log("Good Afternoon. Stay focused.");
+    } else if (time < 19) {
+        console.log("Good evening. Time to relax.");
+    }
+
+
+    console.log(`Weather: ${weather}`);
+    if (weather === "rainy" && daytype === "workday") {
+        console.log("Don't forget to take your umbrella.");
+    } else if (weather === "sunny") {
+        console.log("Enjoy the sunshine. Stay hydated.");
+    } else if (weather === "cloudy") {
+        console.log("It's cloudy. Stay cozy");
+    }
+
+
+    console.log(`Daytype: ${daytype}`);
+
+    if (daytype === "workday") {
+        console.log("It's workday. Stay productive.");
+    } else if (daytype === "holiday") {
+    console.log("Holiday is here. Have fun!" );
+    } else if (daytype === "weekend"){
+        console.log("It's weekend. Enjoy yourself.")
+    }
 }
