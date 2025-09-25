@@ -1,6 +1,7 @@
 // Task 1
 
-function getGrade(score) {
+function getGrade() {
+    let score = prompt("Enter your score: ");
 
     if (score === 100) {
         console.log("Score:", score, " -> Outstanding! Grade: A+")
@@ -60,12 +61,14 @@ function calculatePrice() {
 
 // TASK 3
 
-function weatherAdvice(temperature, isRaining) {
+function weatherAdvice() {
+    let temperature = prompt("What is the temperature:")
+    let isRaining = confirm("Is it raining:")
 
     console.log("Temperature:", temperature)
     console.log("Is it raining?", isRaining)
 
-    if (temperature < 32 && isRaining === true) {
+    if (temperature < 32 && isRaining) {
         console.log("Freezing rain! Stay inside!")
     } else if (temperature < 32) {
         console.log("Very cold, wear a heavy coat.")
@@ -86,8 +89,10 @@ function weatherAdvice(temperature, isRaining) {
 
 // // TASK 4
 
-function atmSimulation(balance, action, amount) {
-   
+function atmSimulation() {
+    let balance = prompt("Enter your account balance:")
+    let action = prompt("Enter the action you want to perform (withdraw, deposit, transfer):")
+    let amount = prompt("Enter the amount:")
     let remainingBalance = Number(balance) - Number(amount)
     let depositBalance = Number(balance) + Number(amount)
 
@@ -111,12 +116,17 @@ function atmSimulation(balance, action, amount) {
         console.log(`Your new account balance is #${depositBalance}`)
 
     }
+
     console.log("")  //Empty line
 }
 
 
 //Task 5
-function personalAssistant(time, weather, daytype) {
+function personalAssistant() {
+    let time = prompt("Enter time in hour (1-24):");
+    let weather = prompt("Is it sunny, rainy, or cloudy:");
+    let daytype = prompt("Is it weekend, workday or holiday:");
+
 
     console.log(`Time: ${time}hour`);
 
@@ -133,7 +143,7 @@ function personalAssistant(time, weather, daytype) {
         console.log("Good Afternoon. Stay focused.");
     } else if (time < 19) {
         console.log("Good evening. Time to relax.");
-    } 
+    }
 
 
     console.log(`Weather: ${weather}`);
@@ -142,9 +152,7 @@ function personalAssistant(time, weather, daytype) {
     } else if (weather === "sunny") {
         console.log("Enjoy the sunshine. Stay hydated.");
     } else if (weather === "cloudy") {
-        console.log("It's cloudy. Stay cozy.");
-    } else if (weather === "rainy") {
-        console.log("Stay safe.");
+        console.log("It's cloudy. Stay cozy");
     }
 
 
@@ -156,15 +164,5 @@ function personalAssistant(time, weather, daytype) {
     console.log("Holiday is here. Have fun!" );
     } else if (daytype === "weekend"){
         console.log("It's weekend. Enjoy yourself.")
-    }
-}
-
-
-// Task 6
-function isStrongPassword() {
-    let password = prompt("Enter your password:")
-
-    if (password.length < 8) {
-
     }
 }
