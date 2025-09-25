@@ -184,11 +184,4 @@ function generateReport(names, grades) {
            letterGrade: gradeCategorizer(grades[i])
         });
     }
-    for (let i = 0; i = names[0]; i++) {
-        console.log({
-            name: names[0],
-            grade: grades[0],
-           letterGrade: gradeCategorizer(grades[0])
-        });
-    }
 }
