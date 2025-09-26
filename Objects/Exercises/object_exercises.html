@@ -75,7 +75,7 @@
         for (let movie of highRatings) {
             console.log(`${movie.title}: ${movie.rating}`)
         }
-
+        console.log("")// Empty line
 
 
 
@@ -140,16 +140,43 @@
         }
         console.log(`The total cost of all items: #${getCartTotal(cart)}`)
 
-
+         console.log("")// Empty line
 
 
         // Task 3
 
         let member = {
             name: "Janet Bamgbose",
-            membershipType: "Premium",
-            borrowedBooks: ["The Hunter Games", "The Silence of the Lambs", "The Notebook"]
-        } 
+            membershipType: "premium",
+            borrowedBooks: ["The Hunter Games", "The Silence of the Lambs", "The Notebook"],
+
+            borrowBook: function (book) {
+                this.borrowedBooks.push(book);
+                console.log(`${this.name} borrowed "${book}"`);
+            },
+
+            getBorrowedCount: function () {
+                return this.borrowedBooks.length;
+            },
+
+            getMembershipInfo: function () {
+                if (this.membershipType === "premium") {
+                    return `${this.name} is a Premium member and can borrow unlimited books at discounted price.`;
+                } else if (this.membershipType === "basic") {
+                    return `${this.name} is a Basic member and can borrow up to 5 books at once.`;
+                } else {
+                    return `${this.name} is not a member.`;
+                }
+            }
+
+        }
+        console.log(member)
+        console.log("Books borrowed initially:", member.borrowedBooks)
+        member.borrowBook("You and I")
+        console.log("Updated list of borrowed books:", member.getBorrowedCount());
+        console.log(member.getMembershipInfo());
+
+
     </script>
 </body>
 
