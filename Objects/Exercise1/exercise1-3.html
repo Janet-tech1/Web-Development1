@@ -10,71 +10,71 @@
 <body>
     <script>
 
-        //Task 1
-        //         let movie = {
-        //             title: "Beyond the bar",
-        //             director: "Kim Jae-hong",
-        //             releaseYear: 2025,
-        //             rating: 8.0,
+        // Task 1
+        let movie = {
+            title: "Beyond the bar",
+            director: "Kim Jae-hong",
+            releaseYear: 2025,
+            rating: 8.0,
 
-        //             getSummary: function () {
-        //                 console.log(`${this.title} (${this.releaseYear}), directed by ${this.director}, rated ${this.rating}.`);
-        //             }
-        //         };
+            getSummary: function () {
+                console.log(`${this.title} (${this.releaseYear}), directed by ${this.director}, rated ${this.rating}.`);
+            }
+        };
 
-        //         console.log(movie)
+        console.log(movie)
 
-        //         for (let m in movie){
-        //         movie.isWatched = true;
-        //         }
-        //         console.log(movie.getSummary()),
-        //         console.log("Is watched:", movie.isWatched);
+        for (let m in movie) {
+            movie.isWatched = true;
+        }
+        console.log(movie.getSummary()),
+            console.log("Is watched:", movie.isWatched);
 
-        // // Challenge
-        //         let movies = [
-        //             {
-        //                 title: "Head Over Heels",
-        //                 director: "Kim Yong-wan",
-        //                 releaseYear: 2025,
-        //                 rating: 7.4,
-        //                 isWatched: true,
-        //                 getSummary: function () {
-        //                 console.log(`${this.title} (${this.releaseYear}), directed by ${this.director}, rated ${this.rating}.`);
-        //             }
-        //             },
-        //             {
-        //                 title: "Bon Appétit, Your Majesty",
-        //                 director: "Jang Tae-yoo",
-        //                 releaseYear: 2025,
-        //                 rating: 8.2,
-        //                  isWatched: true,
-        //                 getSummary: function () {
-        //                 console.log(`${this.title} (${this.releaseYear}), directed by ${this.director}, rated ${this.rating}.`);
-        //             }
-        //             },
-        //             {
-        //                 title: "The Nice Guy",
-        //                 director: "Song Hae-sung",
-        //                 releaseYear: 2025,
-        //                 rating: 6.8,
-        //                 isWatched: true,
-        //                 getSummary: function () {
-        //                 console.log(`${this.title} (${this.releaseYear}), directed by ${this.director}, rated ${this.rating}.`);
-        //             }
-        //             }];
+        // Challenge
+        let movies = [
+            {
+                title: "Head Over Heels",
+                director: "Kim Yong-wan",
+                releaseYear: 2025,
+                rating: 7.4,
+                isWatched: true,
+                getSummary: function () {
+                    console.log(`${this.title} (${this.releaseYear}), directed by ${this.director}, rated ${this.rating}.`);
+                }
+            },
+            {
+                title: "Bon Appétit, Your Majesty",
+                director: "Jang Tae-yoo",
+                releaseYear: 2025,
+                rating: 8.2,
+                isWatched: true,
+                getSummary: function () {
+                    console.log(`${this.title} (${this.releaseYear}), directed by ${this.director}, rated ${this.rating}.`);
+                }
+            },
+            {
+                title: "The Nice Guy",
+                director: "Song Hae-sung",
+                releaseYear: 2025,
+                rating: 6.8,
+                isWatched: true,
+                getSummary: function () {
+                    console.log(`${this.title} (${this.releaseYear}), directed by ${this.director}, rated ${this.rating}.`);
+                }
+            }];
 
-        //             console.log(movies)
+        console.log(movies)
 
-        //         let highRatings = [];
-        //         for (let movie of movies) {
-        //             if (movie.rating >= 8) {
-        //                 highRatings.push(movie);
-        //             }
-        //         }
-        //         console.log("Movies with ratings (>= 8):");
-        //         for (let movie of highRatings) {
-        //             console.log(`${movie.title}: ${movie.rating}`)
-        //         }
+        let highRatings = [];
+        for (let movie of movies) {
+            if (movie.rating >= 8) {
+                highRatings.push(movie);
+            }
+        }
+        console.log("Movies with ratings (>= 8):");
+        for (let movie of highRatings) {
+            console.log(`${movie.title}: ${movie.rating}`)
+        }
 
 
 
@@ -144,7 +144,7 @@
 
 
         // Task 3
-        
+
         let member = {
             name: "Janet Bamgbose",
             membershipType: "Premium",

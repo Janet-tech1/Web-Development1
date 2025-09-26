@@ -28,22 +28,25 @@ function shoppingList() {
 
     function formatList(list) {
         console.log("Formatted list:");
-        for (let i = 0; i < list.length; i++) {
+        for (let i = 0; i < shoppingList.length; i++) {
             console.log(`Format List: ${i + 1}: ${list[i]}`);
         }
     }
     formatList(shoppingList);
 }
-console.log(formatList)
 
 
 
-// **Task:** Student Grades Analyzer  
 
 
-function getAverage(grades) {
+
+// **Task 2:** Student Grades Analyzer  
+function studentGrades() {
+    let grades = [60, 50, 90, 30];
+
+
+    function getAverage() {
     let total = 0;
-
     console.log("Calculating average grade:");
     for (let grade of grades) {
         total += grade;
@@ -53,9 +56,11 @@ function getAverage(grades) {
     console.log(`The student grades: ${grades}`);
     console.log(`Total: ${total}, Average: ${average.toFixed(2)}`);
 
-}
+    }
+    console.log(getAverage());
 
-function getHighest(grades) {
+
+    function getHighest() {
     let highest = 0;
     for (let i = 0; i < grades.length; i++) {
         if (grades[i] > highest) {
@@ -63,9 +68,11 @@ function getHighest(grades) {
         }
     }
     console.log("The highest grade:", highest);
-}
+    }
+    console.log("The highest grade:", getHighest());
 
-function getLowest(grades) {
+
+    function getLowest() {
     let lowest = grades[0];
     for (let i = 0; i < grades.length; i++) {
         if (grades[i] < lowest) {
@@ -73,26 +80,27 @@ function getLowest(grades) {
         }
     }
     console.log("The lowest grade:", lowest);
-}
+    }
+    console.log("The lowest grade:", getLowest());
 
-function getPassRate(grades) {
+    function getPassRate() {
     let pass = 0;
     for (let i = 0; i < grades.length; i++) {
         if (grades[i] >= 50) {
             pass++;
-            console.log(`Grades of 50 and above: ${grade}`);
         }
     }
-
-    console.log("Grades of 50 and above:", pass);
-
+    console.log(`Number of students who scored 50 or above: ${pass}`)
+    
     let passRate = pass / grades.length;
-    console.log("Student's that passed:", passRate.toFixed(2))
+    console.log("Number of students that passed divided by the total number of students:", passRate.toFixed(2));
 
     let passPercentage = pass / grades.length * 100;
-    console.log("Student's that passed:", passPercentage.toFixed(2));
+    console.log(`Percentage of students who passed: ${passPercentage}%`);
 }
-getPassRate(grades);
+    getPassRate(grades);
+}
+
 
 
 
@@ -156,6 +164,8 @@ function movieRating() {
     console.log("The top rated:", getTopMovie());
 
     // Sort
+    console.log("")     // Empty line
+
     let combined = movies.map((movie, index) => ({
         name: movie,
         rating: ratings[index]
@@ -172,36 +182,57 @@ function movieRating() {
 
 
 //Task 4
-function addStudent(names, grades) {
-    console.log("Student names:", names)
-    console.log("Student grades:", grades)
-}
-function calculateAverage(grades) {
+function studentInfo() {
+    let names = ["Ajibade", "Esther", "Williams", "Jason", "Adebayo", "Johnson", "Phillip", "John"]
+    let grades = [65, 44, 78, 89, 44, 76, 49, 93]
+
+    function addStudent(name, grade) { 
+        names.push(name);
+        grades.push(grade);
+
+        return {
+            names: name,
+            grades: grade
+
+        }
+    }
+    console.log("Names:", names)
+    console.log("Grades:", grades)
+    
+     console.log("Updated Student:", addStudent("Sharon", 69))
+
+
+    function calculateAverage() {
     let total = 0;
     console.log("Calculating average grade:");
     for (let grade of grades) {
         total += grade;
     }
-
     let average = total / grades.length;
     console.log(`The student grades: ${grades}`);
     console.log(`Total: ${total}, Average: ${average.toFixed(2)}`);
+    }
+    console.log("The average grade:", calculateAverage())
 
-}
-function getHighest(names, grades) {
+
+    function getHighest() {
     let highestGrade = Math.max(...grades);
     let i = grades.indexOf(highestGrade);
-    console.log(`The student with the highest grade: ${names[i]} with a grade of (${highestGrade})`);
-}
 
-function getLowest(names, grades) {
+    console.log(`The student with the highest grade: ${names[i]} with a grade of (${highestGrade})`);
+    }
+      console.log("The highest grade:", getHighest())
+
+
+    function getLowest() {
     let lowestGrade = Math.min(...grades);
     let i = grades.indexOf(lowestGrade);
     console.log(`The student with the lowest grade: ${names[i]} with a grade of ${lowestGrade})`);
-}
+    }
+    console.log("The lowest grade:", getLowest())
 
-function gradeCategorizer(grade) {
 
+    function gradeCategorizer(grade) {
     if (grade >= 90) {
         console.log("A");
     } else if (grade >= 80) {
@@ -213,8 +244,8 @@ function gradeCategorizer(grade) {
     } else {
         console.log("F");
     }
-}
-function generateReport(names, grades) {
+    }
+    function generateReport() {
 
     for (let i = 0; i < names.length; i++) {
         console.log({
@@ -223,4 +254,6 @@ function generateReport(names, grades) {
             letterGrade: gradeCategorizer(grades[i])
         });
     }
+    }
+    console.log("Report:", generateReport())
 }
