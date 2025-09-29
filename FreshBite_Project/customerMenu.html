@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 16px;
+            background: #f7f7f8;
+            color: #111;
+            background-image: linear-gradient(rgb(136, 209, 125), rgb(195, 223, 195));
+        }
+
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            font-size: 20px;
+        }
+        button {
+            background-color: rgb(31, 142, 35);
+        }
+         button:hover {
+            background-color: rgb(245, 252, 250);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>FreshBite Menu</h1>
+    <div class="container">
+        <label>Search: <input id="searchBox" placeholder="Type to search"></label>
+        <select id="categoryFilter" onchange="filterMenu()">
+            <option value="all">All</option>
+            <option value="Food">Food</option>
+            <option value="Drink">Drink</option>
+            <option value="Dessert">Dessert</option>
+        </select>
+
+
+        <ul id="menuList"></ul>
+
+        <h2>Cart</h2>
+        <ul id="cartList"></ul>
+        <p>Total: #<span id="total">0</span></p>
+        <button onclick="checkout()">Checkout</button>
+    </div>
+
+    <script src="customer.js"></script>
+</body>
+
+</html>
