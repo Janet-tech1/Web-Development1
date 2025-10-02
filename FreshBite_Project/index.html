@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshBite Café</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .homepage {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            width: auto;
+            background-image: url(../images/fresh2.jpg);
+            border-radius: 5px;
+            background-blend-mode: lighten;
+        }
+
+        .homepage h1 {
+            font-size: 4.0rem;
+            margin-bottom: 40px;
+            color: #04070a;
+        }
+
+        .homepage1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .homepage button {
+            width: 250px;
+            gap: 20px;
+            padding: 15px;
+            margin: 15px;
+            font-size: 18px;
+            border-radius: 12px;
+            border: none;
+            cursor: pointer;
+            background: #4ddb34;
+            color: black;
+        }
+
+        .homepage button:hover {
+            background: #bbf5b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="homepage">
+        <h1><i class="fa-solid fa-bowl-food"></i> Welcome to FreshBite Café <i class="fa-solid fa-ice-cream"></i></h1>
+        <div class="homepage1">
+            <button onclick="location.href='customerMenu.html'"><i class="fa-solid fa-utensils"></i> Customer Menu</button>
+            <button onclick="location.href='login.html', 'staffDashboard.html'"><i class="fa-solid fa-person"></i> Staff Dashboard</button>
+        </div>
+    </div>
+</body>
+
+</html>

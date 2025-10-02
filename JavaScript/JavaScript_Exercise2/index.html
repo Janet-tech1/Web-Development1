@@ -1,0 +1,58 @@
+<!-- *Task:** Build a Simple Calculator
+
+**Requirements:**
+1. Create variables for two numbers
+2. Perform all arithmetic operations (+, -, *, /, %)
+3. Display results using template literals
+4. Include proper labeling and formatting
+5. Use the console to display additional information
+
+**Challenge:** Make it interactive by using `prompt()` to get numbers from the user
+ -->
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+    <div class="calc">
+    <h3>Simple Calculator</h3>
+    
+    <button class="demo-button" onclick="basicCalculator()">Basic Calculator</button>
+    
+    <div id="calculator" class="output">Click the above button to explore operators...</div>
+</div>
+
+<script>
+    function basicCalculator() {
+    // Get user input
+    const firstNum = prompt("Enter your first number:") ;
+    const secondNum = prompt("Enter your second number:") ;
+    
+    let addition = Number(firstNum) + Number(secondNum);        
+    let subtraction = Number(firstNum) - Number(secondNum);     
+    let multiplication = Number(firstNum) * Number(secondNum);  
+    let division = Number(firstNum) / Number(secondNum);        
+    let remainder = Number(firstNum) % Number(secondNum);      
+
+    
+    let output = `
+        <strong>Arithmetic Operators:</strong><br><br>
+        a = ${firstNum}, b = ${secondNum}<br><br>
+        Addition (firstNum + secondNum): ${addition}<br>
+        Subtraction (firstNum - secondNum): ${subtraction}<br>
+        Multiplication (firstNum * secondNum): ${multiplication}<br>
+        Division (firstNum / secondNum): ${division.toFixed(3)}<br>
+        Remainder/Modulo (firstNum % secondNum): ${remainder}<br>
+    `;
+    
+    document.getElementById('calculator').innerHTML = output;
+}
+</script>
+ </body>
+ </html>

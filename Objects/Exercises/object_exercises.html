@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // Task 1
+        let movie = {
+            title: "Beyond the bar",
+            director: "Kim Jae-hong",
+            releaseYear: 2025,
+            rating: 8.0,
+
+            getSummary: function () {
+                console.log(`${this.title} (${this.releaseYear}), directed by ${this.director}, rated ${this.rating}.`);
+            }
+        };
+
+        console.log(movie)
+
+        for (let m in movie) {
+            movie.isWatched = true;
+        }
+        console.log(movie.getSummary()),
+            console.log("Is watched:", movie.isWatched);
+
+        // Challenge
+        let movies = [
+            {
+                title: "Head Over Heels",
+                director: "Kim Yong-wan",
+                releaseYear: 2025,
+                rating: 7.4,
+                isWatched: true,
+                getSummary: function () {
+                    console.log(`${this.title} (${this.releaseYear}), directed by ${this.director}, rated ${this.rating}.`);
+                }
+            },
+            {
+                title: "Bon Appétit, Your Majesty",
+                director: "Jang Tae-yoo",
+                releaseYear: 2025,
+                rating: 8.2,
+                isWatched: true,
+                getSummary: function () {
+                    console.log(`${this.title} (${this.releaseYear}), directed by ${this.director}, rated ${this.rating}.`);
+                }
+            },
+            {
+                title: "The Nice Guy",
+                director: "Song Hae-sung",
+                releaseYear: 2025,
+                rating: 6.8,
+                isWatched: true,
+                getSummary: function () {
+                    console.log(`${this.title} (${this.releaseYear}), directed by ${this.director}, rated ${this.rating}.`);
+                }
+            }];
+
+        console.log(movies)
+
+        let highRatings = [];
+        for (let movie of movies) {
+            if (movie.rating >= 8) {
+                highRatings.push(movie);
+            }
+        }
+        console.log("Movies with ratings (>= 8):");
+        for (let movie of highRatings) {
+            console.log(`${movie.title}: ${movie.rating}`)
+        }
+        console.log("")// Empty line
+
+
+
+        // Task 2
+        let cartItem = {
+            name: "Bags",
+            price: 8500,
+            quantity: 2,
+
+            getTotal: function () {
+                console.log(`The total cost of ${this.quantity} ${this.name} is #${this.price * this.quantity}`);
+
+            }
+
+
+        };
+        console.log(cartItem)
+        cartItem.getTotal()
+
+        let cart = [
+            {
+                name: "Crepe materials",
+                price: 9000,
+                quantity: 5,
+                getTotal: function () {
+                    return this.price * this.quantity;
+                }
+            },
+            {
+                name: "Heels",
+                price: 15000,
+                quantity: 2,
+                getTotal: function () {
+                    return this.price * this.quantity;
+                }
+            },
+            {
+                name: "Wig",
+                price: 75000,
+                quantity: 2,
+                getTotal: function () {
+                    return this.price * this.quantity;
+                }
+            },
+            {
+                name: "Meatpie",
+                price: 1000,
+                quantity: 5,
+                getTotal: function () {
+                    return this.price * this.quantity;
+                }
+            },
+        ];
+
+        console.log(cart)
+        function getCartTotal(cart) {
+            let total = 0
+            for (let item of cart) {
+                total += item.getTotal()
+            }
+            return total
+        }
+        console.log(`The total cost of all items: #${getCartTotal(cart)}`)
+
+         console.log("")// Empty line
+
+
+        // Task 3
+
+        let member = {
+            name: "Janet Bamgbose",
+            membershipType: "premium",
+            borrowedBooks: ["The Hunter Games", "The Silence of the Lambs", "The Notebook"],
+
+            borrowBook: function (book) {
+                this.borrowedBooks.push(book);
+                console.log(`${this.name} borrowed "${book}"`);
+            },
+
+            getBorrowedCount: function () {
+                return this.borrowedBooks.length;
+            },
+
+            getMembershipInfo: function () {
+                if (this.membershipType === "premium") {
+                    return `${this.name} is a Premium member and can borrow unlimited books at discounted price.`;
+                } else if (this.membershipType === "basic") {
+                    return `${this.name} is a Basic member and can borrow up to 5 books at once.`;
+                } else {
+                    return `${this.name} is not a member.`;
+                }
+            }
+
+        }
+        console.log(member)
+        console.log("Books borrowed initially:", member.borrowedBooks)
+        member.borrowBook("You and I")
+        console.log("Updated list of borrowed books:", member.getBorrowedCount());
+        console.log(member.getMembershipInfo());
+
+
+    </script>
+</body>
+
+</html>

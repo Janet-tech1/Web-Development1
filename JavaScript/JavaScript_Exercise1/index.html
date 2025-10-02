@@ -1,0 +1,90 @@
+<!-- *Task:** Create a Personal Information Display
+
+**Requirements:**
+1. Create variables for your personal information:
+   - First name (string)
+   - Last name (string) 
+   - Age (number)
+   - Is student (boolean)
+   - Favorite color (string)
+
+2. Display this information using template literals
+3. Calculate and show what your age will be in 5 years
+4. Create a formatted display that looks professional
+ -->
+
+ 
+
+ 
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+    <div class="card">
+    <h3>Personal Information</h3>
+    <p>This is my personal information display:</p>
+    
+    <button class="demo-button" onclick="createPersonalInfo()">Show My Info</button>
+    <button class="demo-button" onclick="createCustomInfo()">Create Custom Info</button>
+    
+    <div id="personalinfo-output" class="output">Click a button to display personal information...</div>
+</div>
+
+<script>
+function createPersonalInfo() {
+    // Student should modify these variables
+    const firstName = "Janet";
+    const lastName = "Bamgbose";
+    const age = 20;
+    const isStudent = true;
+    const favoriteColor = "Orangered";
+    
+    // Calculate future age
+    const futureAge = age + 5;
+    
+    // Create formatted display
+    const personalInfo = `
+        <div style="border: 2px solid ${favoriteColor}; padding: 15px; border-radius: 8px; background-color: #f9f9f9;">
+            <h4 style="color: ${favoriteColor}; margin-top: 0;">Personal Information Card</h4>
+            <p><span class ="highlight">Name:</span> ${firstName} ${lastName}</p>
+            <p><span class ="highlight">Current Age:</span> ${age} years old</p>
+            <p><span class ="highlight">Student Status:</span> ${isStudent ? 'Yes, I am a student' : 'No, I am not a student'}</p>
+            <p><span class ="highlight">Favorite Color:</span> ${favoriteColor}</p>
+            <p><span class ="highlight">In 5 years:</span> I will be ${futureAge} years old</p>
+          
+        </div>
+    `;
+    
+    document.getElementById('personalinfo-output').innerHTML = personalInfo;
+}
+
+function createCustomInfo() {
+    // Get user input
+    const firstName = prompt("Enter your first name:") || "Janet";
+    const lastName = prompt("Enter your last name:") || "Bamgbose";
+    const age = parseInt(prompt("Enter your age:")) || 20;
+    const isStudent = confirm("Are you currently a student?");
+    const favoriteColor = prompt("Enter your favorite color:") || "Orangered";
+    
+    const futureAge = age + 5;
+    
+    const personalInfo = `
+        <div style="border: 2px solid ${favoriteColor}; padding: 15px; border-radius: 8px; background-color: #f9f9f9;">
+            <h4 style="color: ${favoriteColor}; margin-top: 0;">Your Personal Information Card</h4>
+            <p><strong>Name:</strong> ${firstName} ${lastName}</p>
+            <p><strong>Current Age:</strong> ${age} years old</p>
+            <p><strong>Student Status:</strong> ${isStudent ? 'Yes, I am a student' : 'No, I am not a student'}</p>
+            <p><strong>Favorite Color:</strong> ${favoriteColor}</p>
+            <p><strong>In 5 years:</strong> You will be ${futureAge} years old</p>
+    `;
+    
+    document.getElementById('personalinfo-output').innerHTML = personalInfo;
+}
+</script>
+ </body>
+ </html>

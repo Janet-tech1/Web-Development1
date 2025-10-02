@@ -1,0 +1,53 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: black;
+    width: auto;
+    
+}
+
+/* Center content */
+h1 {
+    text-align: center;
+    color: #000509;
+    font-size: 2.0rem;
+    margin-bottom: 20px;
+}
+
+/* Forms and input boxes */
+
+.search {
+    padding-right: 20px;
+    margin-right: 20px;
+    width: auto;
+}
+form,
+.form-box {
+    width: auto;
+    background: rgba(255, 255, 255, 0.9);
+    margin-right: 50px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+input,
+select,
+button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+
+/* Section headings */
+h2 {
+    margin-top: 30px;
+    color: #34495e;
+    text-align: center;
+}
+
