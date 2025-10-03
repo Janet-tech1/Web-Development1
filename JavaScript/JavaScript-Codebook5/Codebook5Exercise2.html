@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter</title>
+</head>
+<body>
+    <div>
+        <label>Your Name:</label>
+        <input type="text" id="nameInput" placeholder="Enter your name"
+            onkeyup="handleKeyPress()">
+    </div>
+    <div id="keyOutput"></div>
+
+    <script>
+        function handleKeyPress() {
+            let inputValue = document.getElementById('nameInput').value;
+            let output = document.getElementById('keyOutput');
+
+            if (inputValue.length === 0) {
+                output.textContent = '';
+            } else {
+                output.textContent = `You typed: "${inputValue}" (${inputValue.length} characters)`;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+   <script>
+                                 // Practice Exersice 6
+
+   // 1. Create a **validation function** `isStrongPassword(password)` that checks:  - At least 8 characters  - Contains a number  - Contains a special character  
+
+      function isStrongPassword(password) {
+
+         if (password.length < 8) {
+            return "Password too short! Must be at least 8 characters.";
+         }
+
+         if (!/[0-9]/.test(password)) {
+            return "Password must contain at least one number";
+         }
+
+         if (!/[!@#$%^&*()_+=><?|]/.test(password)) {
+            return "Password must contain a special character";
+         }
+
+         return "Strong Password!"
+      }
+
+      console.log("Validating password:");
+      console.log(isStrongPassword("word"));
+      console.log(isStrongPassword("password123"));
+      console.log(isStrongPassword("password123#"))
+
+
+      console.log("")
+      // 2. Create a **formatter function** `formatPercentage(value)` that always shows one decimal place with `%`. 
+
+      function formatPercentage(value) {
+         return `${value.toFixed(1) + "%"}`
+      }
+
+      console.log("Formatter function:")
+      console.log(formatPercentage(1234.546))
+      console.log(formatPercentage(1233))
+      console.log(formatPercentage(1.65780))
+
+
+      console.log("")
+
+      //    3. Create a **calculator function** `calculateCompoundInterest(principal, rate, years)` using the formula:  
+      // \[ A = P \times (1 + r)^t \] 
+
+      function calculateCompoundInterest(principal, rate, years) {
+         let amount = principal * Math.pow((1 + rate/100), years); // math.pow(base, exponent)
+         let interest = amount - principal
+
+         return {
+            principal: `#${principal}`,
+            rate: rate,
+            years: `${years} years`,
+            totalAmount: `#${amount.toFixed(1)}`,
+            interestEarned: `#${interest.toFixed(1)}`
+         }
+      }
+      console.log("Compound Interest Calculator:");
+      console.log(calculateCompoundInterest(10000, 20, 5));
+      console.log(calculateCompoundInterest(5000, 5, 2));
+      console.log(calculateCompoundInterest(400000, 40, 1));
+
+      console.log("")
+
+
+
+      //    4. Create a **decision maker function** `canGraduate(credits, gpa)` that:  
+      // - Requires at least 120 credits  
+      // - Requires GPA ≥ 2.0  
+
+
+      function canGraduate(credits, gpa) {
+         if (credits < 120 && gpa < 2.0) {
+            return "You cannot graduate.";
+
+         } else if (credits < 120) {
+            return "You must have at least 120 credits";
+
+         } else if  (gpa < 2.0) {
+            return "Your GPA is too low.";
+
+         } else {
+            return "Congratulations! You can graduate.";
+         }
+      }
+
+      console.log(canGraduate(150, 3.4));
+      console.log(canGraduate(100, 3.4));
+      console.log(canGraduate(120, 1.7));
+      console.log(canGraduate(110, 1.5));
+
+      console.log("")
+
+      // 5. Create a **utility function** `reverseWords(sentence)` that takes a string and returns the sentence with the words reversed.  
+      function reverseWords(sentence) {
+
+         return sentence.split("").reverse().join(" ");
+      }
+      console.log(reverseWords("Wonderful Weather"));
+
+
+
+
+
+      // Practice Exercise 7
+
+   </script>
+</body>
+
+</html>

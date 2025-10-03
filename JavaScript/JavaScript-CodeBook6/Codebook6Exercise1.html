@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persistent Notes App</title>
+
+    <style>
+        h1{
+            color: Blue;
+        }
+
+        button{
+            color: white;
+            background-color: rgb(84, 62, 228);
+        }
+
+        button:hover{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>My NotePad</h1>
+
+    <textarea name="Note" id="noteInput" placeholder="Type your note here"></textarea>
+    <button onclick="saveNote()">Save Note</button>
+    <button onclick="loadNote()">Load Note</button>
+
+    <p id="savedAt"></p>
+
+    <script>
+        function saveNote() {
+            let note = document.getElementById('noteInput').value;
+
+            localStorage.setItem("notePad", note);
+            alert("Note saved!");
+        }
+
+        function loadNote() {
+            let noteSaved = localStorage.getItem("notePad");
+
+            if (noteSaved) {
+                document.getElementById('noteInput').value = noteSaved;
+            } else {
+                alert ("Note not found!")
+            }
+        }
+    </script>
+</body>
+</html>
