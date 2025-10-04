@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Counter With Reset</title>
+</head>
+<body>
+    <p id="text"></p>
+    <button onclick="resetCounter()">Reset Counter</button>
+
+    <script>
+        let visitCount = localStorage.getItem("visitCount");
+
+        if (visitCount) {
+            visitCount = Number(visitCount) + 1;
+        } else {
+            visitCount = 1;
+        }
+        localStorage.setItem("visitCount", visitCount);
+
+        document.getElementById('text').textContent ="You have visited" + visitCount + "times";
+
+        function resetCounter() {
+            localStorage.removeItem("visitCount");
+            document.getElementById('text').textContent ="Counter has been reset!";
+        }
+    </script>
+</body>
+</html>

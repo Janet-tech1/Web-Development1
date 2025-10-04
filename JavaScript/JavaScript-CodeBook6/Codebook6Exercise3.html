@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Switcher with Persistence</title>
+    <style>
+        body {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+
+        button {
+            font-size: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 id="title">Theme Switcher with Persistence</h1>
+
+        <button onclick="setTheme('darkMode')">Dark Mode</button>
+        <button onclick="setTheme('lightMode')">Light Mode</button>
+        <button onclick="setTheme('blueMode')">Blue Mode</button>
+    </div>
+
+    <script>
+        function setTheme(theme) {
+            if (theme === "darkMode") {
+                document.body.style.backgroundColor = "black";
+                document.body.style.color = "white";
+            }
+
+            if (theme === "lightMode") {
+                document.body.style.backgroundColor = "white";
+                document.body.style.color = "black";
+            }
+
+            if (theme === "blueMode") {
+                document.body.style.backgroundColor = "blue";
+                document.body.style.color = "skyblue";
+            }
+        }
+        // localStorage.setItem("theme:", theme)
+    </script>
+</body>
+
+</html>
