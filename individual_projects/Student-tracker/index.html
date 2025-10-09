@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Student Performance Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h1><i class="fa-solid fa-book"></i>JaneBee Academy</h1>
+        <button onclick="tracker('dashboard', this)">Dashboard</button>
+        <button onclick="tracker('students', this)">Student Details</button>
+        <button onclick="tracker('addStudent', this)">Add Student</button>
+        <button onclick="tracker('contact', this)">Contact</button>
+    </nav>
+
+    <!-- Dashboard -->
+    <section id="dashboard" class="page active">
+        <div class="loginBox">
+            <div id="loginBox">
+                <h2></i>Welcome To JaneBee Academy Student Performance Tracker</h2>
+                <p class="subtitle">Manage classroom records, view student performance, and give support where it's
+                    needed.
+                </p>
+                <div class="log">
+                    <input type="text" id="username" placeholder="Enter your username">
+                    <button onclick="login()">Login</button>
+                </div>
+                <footer class="footer">
+                    © 2025 JaneBee Academy | Empowering Education
+                </footer>
+            </div>
+        </div>
+
+        <div class="welcomeBox">
+            <div id="welcomeBox" style="display:none;">
+                <h1 id="welcomeMessage"></h1>
+                <p> This Student Performance Tracker helps you manage classroom records,
+                    view performance at a glance, and identify students who need support.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Student Details -->
+    <section id="students" class="page">
+        <div class="stud">
+            <h2><i class="fa-solid fa-book-tanakh"></i>Student Details</h2>
+            <input type="text" id="searchBox" placeholder="Search by name..." onkeyup="searchStudents()">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Class</th>
+                        <th>Subject 1</th>
+                        <th>Score</th>
+                        <th>Subject 2</th>
+                        <th>Score</th>
+                        <th>Subject 3</th>
+                        <th>Score</th>
+                        <th>Average</th>
+                        <th>Performance</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="studentTable"></tbody>
+            </table>
+        </div>
+    </section>
+
+
+    <!-- Add Student -->
+    <section id="addStudent" class="page">
+        <div class="add">
+            <h2>Add Student</h2>
+            <button onclick="addStudents()">Add Student</button>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="page">
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <p><i class="fa-solid fa-phone"></i> Phone: +234 800 123 4567</p>
+            <p><i class="fa-solid fa-square-envelope"></i> Email: JaneBeeAcademy@gmail.com</p>
+            <p><i class="fa-solid fa-location-dot"></i> Address: 34 Maple Street Toronto, Canada</p>
+        </div>
+    </section>
+
+
+    <div id="addStudents" class="addStudents" onclick="addStudentsClickOutside(event)">
+        <div class="addStudents-content">
+            <h2>Student Form</h2>
+            <label>Photo:</label>
+            <input type="file" id="studentPhoto" accept="image/*"><br>
+            <img id="previewPhoto" src="" alt="Preview" style="width:50px;height:50px;display:none;"><br>
+            <label>Name:</label>
+            <input type="text" id="studentName"><br>
+            <label>Class:</label>
+            <input type="text" id="studentClass"><br>
+            <label>Subject 1:</label>
+            <input type="text" id="subject1"><br>
+            <label>Score 1:</label>
+            <input type="number" id="score1"><br>
+            <label>Subject 2:</label>
+            <input type="text" id="subject2"><br>
+            <label>Score 2:</label>
+            <input type="number" id="score2"><br>
+            <label>Subject 3:</label>
+            <input type="text" id="subject3"><br>
+            <label>Score 3:</label>
+            <input type="number" id="score3"><br>
+            <button onclick="saveStudent()">Save</button>
+            <button onclick="closePage()">Cancel</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

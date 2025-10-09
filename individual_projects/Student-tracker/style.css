@@ -1,0 +1,270 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-left: 150px;
+}
+nav {
+  background: #0077b6;
+  padding: 10px;
+  display: flex;
+  gap: 2px;
+}
+
+.log{
+  border-radius: 1px;
+  height: 20px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+h2{
+  margin-top: 80px;
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+}
+p{
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: 20px;
+}
+
+.loginBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../image/empty-classroom-due-coronavirus-pandemic.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.loginBox input {
+  padding: 10px;       
+  font-size: 16px;      
+  border-radius: 6px;  
+  margin-right: 10px;
+  border: none;
+}
+
+.loginBox button {
+  padding: 10px 20px;  
+  font-size: 16px;    
+  border-radius: 6px;  
+  border: none;
+  background-color: #0077b6;
+  color: white;
+  cursor: pointer;
+}
+
+.loginBox button:hover {
+  background-color: #005f8a;
+}
+.welcomeBox {
+  background-image: url(../image/african-woman-teaching-children-class.jpg);
+  background-size: cover;
+  padding-top: 5px;
+}
+
+.welcomeBox p {
+  padding: 130px;
+  font-size: 25px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.welcomeBox h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+}
+
+.subtitle {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 50px;
+  color: black;
+}
+
+.footer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 70px;
+  color: white;
+}
+
+.quote {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+
+
+nav button {
+  background: white;
+  border: none;
+  padding: 1px 10px;
+  border-radius: 5px;
+  margin: 25px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+nav button.active {
+  background: #0096c7;
+  color: white;
+
+}
+
+.stud {
+  background-image: url(../image/book-laptop-pencil-clock-wooden-table-library-education-learning-concept.jpg);
+  background-size: cover;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.stud {
+  background-image: url(../image/school-classroom-with-books-backpack.jpg);
+  background-size: cover;
+  height: fit-content;
+  padding: 60px;
+  width: auto;
+}
+
+.stud h2 {
+  margin-top: 5px;
+}
+.page {
+  display: none;
+  padding: 20px;
+}
+
+.page.active {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+table {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+th,
+td {
+  color: black;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+  padding: 8px;
+  text-align: center;
+  font-size: 17px;
+}
+
+.excellent {
+  color: green;
+  font-weight: bold;
+}
+
+.good {
+  color: orange;
+  font-weight: bold;
+}
+
+.needs-help {
+  color: red;
+  font-weight: bold;
+}
+
+.add {
+  background-image: url(../image/diligent-learner.jpg);
+  background-size: cover;
+  height: fit-content;
+  padding: 170px;
+  width: auto;
+}
+
+.add h2 {
+  margin-top: 0;
+}
+
+.add button{
+  padding: 10px 20px;  
+  font-size: 16px;    
+  border-radius: 6px;
+  margin-left: 330px;  
+  border: none;
+  background-color: #0077b6;
+  color: white;
+  cursor: pointer;
+}
+
+.add button:hover {
+  background-color: #0096c7;
+}
+
+.addStudents {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.addStudents-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  gap: 2px;
+}
+
+.contact {
+  background-image: url(../image/smiley-girl-concentrated-study.jpg);
+  background-size: cover;
+  height: fit-content;
+  padding: 30px;
+  width: auto;
+}
+
+.contact h2 {
+  font-size: 50px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.contact p {
+  font-size: 30px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+/* Responsive */
+    @media(max-width:600px){
+      table, th, td { font-size:12px; }
+      nav { justify-content:center; }
+      #dashboard { margin:20px; padding:20px; }
+      #studentModalContent { width:95%; }
+    }
