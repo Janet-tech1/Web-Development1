@@ -1,5 +1,9 @@
 let editingIndex = null;
-let students = JSON.parse(localStorage.getItem("students")) || [];
+
+let students = JSON.parse(localStorage.getItem("students"));
+if (!students) {
+    students = [];
+}
 let studentImage = ""; 
 
 

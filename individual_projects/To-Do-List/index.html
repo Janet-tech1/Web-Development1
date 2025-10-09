@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1><i class="fa-solid fa-clipboard-list"></i> My To-Do List</h1>
+
+        <!-- Task Form -->
+        <form id="myTasks">
+            <input type="date" id="dueDate" required >
+            <input type="text" id="taskName" placeholder="Enter task name" required>
+            <select id="priority">
+                <option value="High">High Level</option>
+                <option value="Medium">Medium Level</option>
+                <option value="Low">Low Level</option>
+            </select>
+            <button type="submit">Add Task</button>
+        </form>
+
+
+        <div class="filters">
+            <button data-filter="all"><i class="fa-solid fa-list-check"></i> All Task(s)</button>
+            <button data-filter="completed"><i class="fa-solid fa-list-ol"></i> Completed Task(s)</button>
+            <button data-filter="pending"></i><i class="fa-solid fa-list-check"></i> Pending Task(s)</button>
+        </div>
+
+        <h2>Task List</h2>
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

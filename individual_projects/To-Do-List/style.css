@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(../image/book-with-green-board-background.jpg);
+  background-size: cover;
+  margin: 0;
+  padding: 20px;
+}
+
+.main {
+   background-image: url(../image/book-with-green-board-background.jpg);
+   background-size: cover;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 40px;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+form input, form select, form button {
+ padding: 5px 5px;
+ width: 200px;
+  border-radius: 5px;
+  margin-left: 40px;
+}
+
+.filters {
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 50px;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.filters button {
+  margin: 0 5px;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  background: #dbead9;
+  border-radius: 5px;
+}
+
+.filters button:hover {
+  background: #b1e69c;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #b6ebe0;
+  margin: 8px 0;
+  padding: 10px;
+  border-left: 8px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+
+li.completed span {
+  text-decoration: line-through;
+
+}
+
+li.high { 
+    background-color: red; 
+}
+li.medium { 
+    background-color: orange; 
+}
+li.low { 
+    background-color: green; 
+}
+
+
+.actions button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-left: 5px;
+}
